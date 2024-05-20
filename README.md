@@ -1,8 +1,7 @@
 # Unified Mentor Project 2 Sales budget analysis
-
-# About the Internship:
 This repository contains all the data and information about the 2 projects that I completed as an intern in Unified Mentor from 10-05-2024 to 10-06-2024.
 
+# About the Internship:
 * Organization: Unified Mentor
 * Role: Data Analyst Intern
 * Timeline: 10-05-2024 to 10-06-2024
@@ -13,6 +12,7 @@ This repository contains all the data and information about the 2 projects that 
 
 ## Project Name: 
  - Budget Sales Analytics
+   
 ## Introduction:
 
 ## Domain:
@@ -23,13 +23,25 @@ This repository contains all the data and information about the 2 projects that 
 
 ## Problem Statement:
  - Our "Domain Sale" process is structured to help potential buyers purchase the domain they want immediately without the hassle of contacting the seller directly. A seller lists a domain for sale at a specific price in our Marketplace. An interested buyer sees this domain for sale and decides to buy it.
-Extract various information such as Sales, budget, and variance. You can even compare sales and budgets with various attributes. Extract necessary information about Products and Customers. Make the necessary dashboard with the best you can extract from the data. Use various visualization and features and make the best dashboard. Find key metrics and factors and show the meaningful relationships between attributes
+Extract various information such as Sales, budget, and variance. You can even compare sales and budgets with various attributes. Extract necessary information about Products and Customers. Make the necessary dashboard with the best you can extract from the data. Use various visualization and features and make the best dashboard. Find key metrics and factors and show the meaningful relationships between attributes.
+
+## Objective:
+- Gathering and cleaning data from multiple sources, including sales transactions, customer interactions, and inventory records.
+- Exploring and visualizing data to identify patterns, trends, and relationships that can provide valuable insights.
+- Analyzing customer behavior data to understand preferences, purchase patterns, and lifetime value.
+- Implementing recommendation systems and personalized marketing strategies to enhance customer engagement and loyalty.
+- Building and deploying machine learning models to forecast sales, demand, and inventory levels.
+- Developing predictive models to optimize pricing strategies, identify customer segments, and personalize marketing campaigns.
+- Applying optimization techniques to improve supply chain management, logistics, and inventory optimization.
+- Identifying opportunities for process improvement and efficiency gains through data-driven analysis.
+- Providing actionable insights and recommendations to senior management to support strategic decision-making.
+- Communicating findings and recommendations to stakeholders in a clear and concise manner.
 
 ## Tools used:
-  - Microsoft Excel - For Initial Data Cleaning (Removing Typographic error)
-  - Alteryx - Data Preparation, Join, Analysis
+  - Microsoft Excel - For Data Cleaning
+  - Microsoft SQL Server - Data Preparation, Joining multiple tables, Analysis
   - Power BI - Data Visualization & Dashboard
-  - Google Slides and Canva - Timeline Presentation and Project Report
+  - Canva - Project Report
 
 ## Methodologies used:
 
@@ -280,4 +292,8 @@ From the analysis of US Regional Sales Data analysis, I've -
 
 ## Limitations of the project:
 ## Future Ideas:
+
 ## References:
+
+* [AdventureWorks sample databases](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
+* [How to Download and Install AdventureWorks Database in SQL?](https://www.geeksforgeeks.org/how-to-download-and-install-adventureworks-database-in-sql/)
