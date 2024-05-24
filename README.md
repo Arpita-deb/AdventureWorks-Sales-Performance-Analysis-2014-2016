@@ -174,25 +174,46 @@ There are total 5 tables in the AdventureWorks database Excel file and a separat
 | Nov, 2016	| Double | Budget in November 2016 (in Dollar) | 
 | Dec, 2016 | Double | Budget in December 2016 (in Dollar) | 
 
-## Important Metrics to measure:
+## Metrics used:
 Metrics will help us measure and evaluate the sales performance, and that can provide quantitative and qualitative information about the sales data. Some of the important metrics to use for our exploratory data analysis are -
 
-* Sales volume - The number of units of a product or service sold.
-* Sales revenue/ Total Revenue - The total amount of money received from selling goods or services. It's calculated as `Sales Revenue = Sales Volume * Selling Price`.
-* Profit per product - The difference between the selling price and the cost of a product. It's calculated as `Profit per Product = Selling Price - Cost of Goods Sold`.
-* Total sales per year/quarter/month - The total sales volume or revenue during a specific time period.
-* Total sales per region/state/county/product/channel/teams - The total sales volume or revenue for a specific category.
-* Year-Over-Year Growth - The percentage change in a variable over a year. It's calculated as `Year-Over-Year Growth = (Current Year Value - Last Year Value) / Last Year Value * 100%`.
-* Sales growth rate - The percentage increase in sales over a specific period. It's calculated as `Sales Growth Rate = (Current Period Sales - Previous Period Sales) / Previous Period Sales * 100%`.
+1. **Sales Revenue**: Total revenue generated from sales over a specific period.
+2. **Sales Quantity**: Total number of units or products sold.
+3. **Average Order Value (AOV)**: Average revenue earned per order.
+4. **Customer Acquisition Cost (CAC)**: Cost incurred to acquire a new customer.
+5. **Customer Lifetime Value (CLV)**: Predicted revenue that a customer will generate over their lifetime.
+6. **Sales Growth Rate**: Percentage increase or decrease in sales over a defined period.
+7. **Customer Retention Rate**: Percentage of customers retained over a period.
+8. **Sales by Product Category**: Revenue or quantity of sales for each product category.
+9. **Sales by Customer Segment**: Revenue or quantity of sales by different customer segments (e.g., new customers vs. returning customers).
+10. **Sales by Territory**: Revenue or quantity of sales by geographical territory.
+11. **Sales by Time Period (Calendar)**: Revenue or quantity of sales analyzed over different time periods (daily, weekly, monthly, quarterly, annually).
+12. **Product Performance**: Analysis of how well each product is selling (e.g., top-selling products, slow-moving products).
+13. **Customer Churn Rate**: Percentage of customers who stopped buying your product or service.
 
 ## Data Cleaning:
 
-I used Microsoft Excel and Alteryx for cleaning and transforming the data. In this phase I removed duplicate entries, corrected typographical errors, joined column from external dataset, organized the data by sorting and filtering, created numerical and categorical columns based on existing one. I've documented all the changes here in this [Changelog](https://docs.google.com/document/d/1Lkti0vkrVCjyIRbY__gWmLg4-YVXavDR0ro0j2RtG0Q/edit?usp=sharing).
+I used Microsoft Excel for cleaning the datasets. In this phase I checked for duplicate entries, corrected typographical errors, joined column from external dataset, removed redundant columns, organized the data by sorting and filtering. 
+In addition to the existing tables, I have also used an updated [AdventureWorks sample databases](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) for imputing missing values in the existing tables. For this task I used Microsoft SQL Server for querying the relevant data.
 
-In addition to these existing tables, I have also used an updated [AdventureWorks sample databases](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) for imputing missing values in the existing tables. 
-After cleaning and removing the redundant columns, I ended up with these 7 tables - 
+I've documented all the changes made in the datasets in this [Changelog](https://docs.google.com/document/d/1Lkti0vkrVCjyIRbY__gWmLg4-YVXavDR0ro0j2RtG0Q/edit?usp=sharing).
+
+## Data Transformation:
+
+After cleaning and removing the redundant columns, I loaded the datasets into Alteryx to perform Data Transformation. Here I created new columns (both numeric and categorical), joined the datasets to create more comprehensive dataset that will simplify our analysis process. In the end, we end up with these 7 tables - 
+
+
+
+
+
+
+
+
+
+
 
 ## Data Exploration: 
+
 ## Data Analysis:
 
 ### Seasonal patterns:
