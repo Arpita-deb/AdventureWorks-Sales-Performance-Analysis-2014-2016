@@ -174,6 +174,16 @@ There are total 5 tables in the AdventureWorks database Excel file and a separat
 | Nov, 2016	| Double | Budget in November 2016 (in Dollar) | 
 | Dec, 2016 | Double | Budget in December 2016 (in Dollar) | 
 
+7. **Season**:
+   
+I created a new table named Season which contains 3 columns and 4 rows. It shows the monthly seasons for each of the hemisphere. This table, joined with order data from Sales, will help us to categorize products/customers based on seasons while taking into account where the customer lives. 
+
+| Column name | Datatype | Description |
+| :--- | :--- | :--- |
+| Month | Str | Name of the month |
+| Hemisphere | Str | Name of the hemisphere (Northern/Southern) |
+| Season | Str | Name of the season |
+
 ## Metrics used:
 Metrics will help us measure and evaluate the sales performance, and that can provide quantitative and qualitative information about the sales data. Some of the important metrics to use for our exploratory data analysis are -
 
@@ -202,19 +212,15 @@ I've documented all the changes made in the datasets in this [Changelog](https:/
 
 After cleaning and removing the redundant columns, I loaded the datasets into Alteryx to perform Data Transformation. Here I created new columns (both numeric and categorical), joined the datasets to create more comprehensive dataset that will simplify our analysis process. In the end, we end up with these 5 tables - 
 
-1. Customer_Demographic_Data
-2. Customer_Order_Details
-3. Sales_Data
-4. Product_Details_Data
-5. Seasonal_Calender_Data
+1. Customer_Demographic_Data - 17 columns and 17918 rows
+2. Customer_Order_Details - 5 columns and 6619 rows
+3. Sales_Data - 18 columns and 58189 rows
+4. Product_Details_Data - 16 columns and 406 rows
+5. Seasonal_Calender_Data - 9 columns and 2192 rows
 
 This is how the Entity Relationship Diagram (ERD) looks like for this database after transformation - 
 
-
-
-
-
-
+![ERD](https://github.com/Arpita-deb/Sales_Data_Analysis/assets/139372731/805941a5-a105-4d08-a386-a031dedf0947)
 
 ## Data Exploration: 
 
