@@ -200,11 +200,15 @@ I've documented all the changes made in the datasets in this [Changelog](https:/
 
 ## Data Transformation:
 
-After cleaning and removing the redundant columns, I loaded the datasets into Alteryx to perform Data Transformation. Here I created new columns (both numeric and categorical), joined the datasets to create more comprehensive dataset that will simplify our analysis process. In the end, we end up with these 7 tables - 
+After cleaning and removing the redundant columns, I loaded the datasets into Alteryx to perform Data Transformation. Here I created new columns (both numeric and categorical), joined the datasets to create more comprehensive dataset that will simplify our analysis process. In the end, we end up with these 5 tables - 
 
+1. Customer_Demographic_Data
+2. Customer_Order_Details
+3. Sales_Data
+4. Product_Details_Data
+5. Seasonal_Calender_Data
 
-
-
+This is how the Entity Relationship Diagram (ERD) looks like for this database after transformation - 
 
 
 
@@ -255,3 +259,4 @@ After cleaning and removing the redundant columns, I loaded the datasets into Al
 
 * [AdventureWorks sample databases](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 * [How to Download and Install AdventureWorks Database in SQL?](https://www.geeksforgeeks.org/how-to-download-and-install-adventureworks-database-in-sql/)
+* [What Is Average Order Value (AOV)? Definition and How to Calculate](https://amplitude.com/blog/what-is-average-order-value-aov)
