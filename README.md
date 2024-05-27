@@ -264,7 +264,44 @@ This is how the Entity Relationship Diagram (ERD) looks like for this database a
 
 ## Data Analysis:
 
-### Products:
+## RFM(Recency, Frequency, Monetary) Analysis for Customer Segmentation:
+Recency, frequency, monetary value (RFM) is a model used in marketing analysis that segments a company’s customer base by their purchasing patterns or habits. We evaluate these metrics by asking these questions -
+* Recency: When was the last sales transaction with this customer?
+* Frequency: How often do we sell to this customer?
+* Monetary: How much did we sell to this customer across its entire lifetime?
+
+We'll then give each customer a RFM score from 1-5 with 1 being not good and 5 excellent. 
+
+### Recency: (2, 366)
+
+   - 1: R< 75
+   - 2: R>= 75 and R <148
+   - 3: R>= 148 and R <221
+   - 4: R>=221 and R <294
+   - 5: R>=294
+
+### Frequency: (2, 26)
+
+   - 1: F<7
+   - 2: F>= 7 and F<12
+   - 3: F>=12 and F< 17
+   - 4: F>=17 and F< 22
+   - 5: F>= 22
+
+### Monetary: (15.0984, 14359.0104)
+
+   - 1: M< 2883.8808
+   - 2: M>=2883.8808 and M< 5752.6632
+   - 3: M>=5752.6632 and M< 8621.4456
+   - 4: M>= 8621.4456 and M< 11490.228
+   - 5: M>=11490.228
+
+Then segment the customers based on similiarities : Champion, Loyal, Potential loyalist, recent customer, need attention, about to sleep, at risk, hibernating, lost. Finally we'll rovide recommendation for each segment.
+
+Give a score from 1-5 with 1 : very low, 2: low, 3: medium, 4: high and 5 :very high
+
+
+### Products Analysis:
 
 ## Interpretation of Results:
 
@@ -281,3 +318,5 @@ This is how the Entity Relationship Diagram (ERD) looks like for this database a
 * [AdventureWorks sample databases](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 * [How to Download and Install AdventureWorks Database in SQL?](https://www.geeksforgeeks.org/how-to-download-and-install-adventureworks-database-in-sql/)
 * [What Is Average Order Value (AOV)? Definition and How to Calculate](https://amplitude.com/blog/what-is-average-order-value-aov)
+* [What Is Recency, Frequency, Monetary Value (RFM) in Marketing?](https://www.investopedia.com/terms/r/rfm-recency-frequency-monetary-value.asp)
+* [RFM analysis for Customer Segmentation](https://clevertap.com/blog/rfm-analysis/#How_to_Implement_RFM_Analysis_Used_in_Customer_Segmentation)
