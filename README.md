@@ -274,11 +274,11 @@ We'll then give each customer a RFM score from 1-5 with 1 being not good and 5 e
 
 ### Recency: (2, 366)
 
-   - 1: R< 75
-   - 2: R>= 75 and R <148
+   - 5: R< 75
+   - 4: R>= 75 and R <148
    - 3: R>= 148 and R <221
-   - 4: R>=221 and R <294
-   - 5: R>=294
+   - 2: R>=221 and R <294
+   - 1: R>=294
 
 ### Frequency: (2, 26)
 
@@ -296,9 +296,58 @@ We'll then give each customer a RFM score from 1-5 with 1 being not good and 5 e
    - 4: M>= 8621.4456 and M< 11490.228
    - 5: M>=11490.228
 
-Then segment the customers based on similiarities : Champion, Loyal, Potential loyalist, recent customer, need attention, about to sleep, at risk, hibernating, lost. Finally we'll rovide recommendation for each segment.
+Segmenting customers based on RFM (Recency, Frequency, Monetary) scores into 5-6 segments allows you to effectively target different groups with tailored marketing strategies and customer experiences. Here are some criteria and characteristics you can consider for each segment:
 
-Give a score from 1-5 with 1 : very low, 2: low, 3: medium, 4: high and 5 :very high
+### Criteria for 5-6 Segments Based on RFM Scores:
+
+1. **Champions:**
+   - **RFM Score:** 555
+   - **Characteristics:**
+     - High Recency: Recently made purchases.
+     - High Frequency: Regularly purchases.
+     - High Monetary Value: Spends significantly per transaction.
+   - **Behavior:** Loyal customers who are likely to make frequent high-value purchases. Target with exclusive offers and rewards to maintain loyalty.
+
+2. **Potential Loyalists:**
+   - **RFM Score:**  544 or 545 or 554
+   - **Characteristics:**
+     - High Recency: Recently made purchases.
+     - Moderate to High Frequency: Regularly purchases but not as frequently as Champions.
+     - Moderate to High Monetary Value: Spends decently per transaction.
+   - **Behavior:** Likely to become Champions with targeted incentives and personalized recommendations. Nurture with loyalty programs and personalized communications.
+
+3. **Recent Customers:**
+   - **RFM Score:** 534, 543, 533
+   - **Characteristics:**
+     - High Recency: Recently made purchases.
+     - Low to Moderate Frequency: Makes purchases occasionally.
+     - Moderate Monetary Value: Spends moderately per transaction.
+   - **Behavior:** Recent buyers who may need encouragement to increase frequency. Focus on engagement strategies and product education to drive repeat purchases.
+
+4. **Promising New Customers:**
+   - **RFM Score:** 422, 322, 333,323, 433, 423
+   - **Characteristics:**
+     - Moderate Recency: Made purchases somewhat recently.
+     - Low Frequency: Rarely purchases.
+     - Low Monetary Value: Spends minimally per transaction.
+   - **Behavior:** New customers who need nurturing to increase engagement and loyalty. Offer welcome discounts, personalized recommendations, and educational content to encourage repeat purchases.
+
+5. **Needs Attention:**
+   - **RFM Score:** 222, 221, 212
+   - **Characteristics:**
+     - Low Recency: Hasn't made purchases recently.
+     - Low Frequency: Rarely purchases.
+     - Low Monetary Value: Spends minimally per transaction.
+   - **Behavior:** At risk of churn. Re-engage with targeted reactivation campaigns, special offers, and personalized win-back strategies to regain their interest.
+
+6. **At Risk/Churned Customers:**
+   - **RFM Score:** 111
+   - **Characteristics:**
+     - Very Low Recency: Hasn't purchased in a long time.
+     - Very Low Frequency: Rarely or never purchases.
+     - Very Low Monetary Value: Rarely spends or spent minimally.
+   - **Behavior:** High risk of churn or already churned. Implement aggressive win-back strategies, personalized reactivation offers, and customer feedback surveys to understand reasons for churn.
+
 
 
 ### Products Analysis:
