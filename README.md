@@ -216,23 +216,75 @@ This is how the Entity Relationship Diagram (ERD) looks like for this database a
 
 1. **Sales Trends and Patterns:**
    - What are the overall sales trends from 2014 to 2016?
+   
    - Are there any seasonal patterns or fluctuations in sales?
    - How do different product categories perform over time?
    - What is the total revenue generated and quantity sold from sales over the years?
    - What is the total monthly revenue generated  and quantity sold from sales over the years?
+
+![yearly and monthly sales](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/988d4b1e-39a8-41e9-9994-76fe754f2705)
+
    - What is the total quarterly generated and quantity sold  from sales over the years?
    - What is the total weekly generated and quantity sold  from sales over the years?
    - What is the sales growth rate over the years?
+
+![sales growth rate](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/123db438-39e4-4aba-9773-d46792539b22)
+
+   
    - What is the average order value per order?
 
-2. **Budget vs. Actual Analysis:**
+1. **Budget vs. Actual Analysis:**
    - How does actual sales data from 2016 compare to the budgeted sales figures?
+![Budget](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/4899f741-a5ed-4ec8-b599-8d0008156b9c)
+
    - Are there any significant deviations, and if so, what are the reasons behind them?
    - Which products or territories contributed the most to any variance?
 
 3. **Customer Segmentation and Demographics:**
-   - What are the demographic profiles of our customers (age, gender, location)?
+
+![top 10 customer by aov](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/4e0c013e-496a-4bd6-a650-52cec61c344d)
+
+    - What are the demographic profiles of our customers (age, gender, location)?
    - Do certain demographics correlate with higher sales or specific product preferences?
+  
+   ![age group](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/9ae06372-bd86-47d6-88f5-49ec264d3044)
+
+![carsowned](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b4309459-4ec1-411f-8151-80a30dc70b1f)
+
+![category](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/7cf4ccab-46f2-415f-96bf-f558ecd05819)
+
+![childrenathome](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/0db0a75a-a77c-432d-91e3-68121527bf18)
+
+![color](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/8e5a8c32-02a2-4ad4-9439-278be285fda5)
+
+![commute](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b3e03fc4-c5df-42d7-b7a3-2c44a08ee3b1)
+
+
+![country](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/5c02b698-e4a6-4022-a360-94eabb4c4544)
+
+![customertype](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b59f9703-63ca-4564-8f0c-de76fce01c29)
+
+![edu](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/db05458d-8076-4ef4-899a-a6efe435c07a)
+
+![gender](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/448148b4-de10-49da-821c-11e18441c05b)
+
+![houseowner](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b59de5a2-20d5-457c-bb1c-8bd28f1affb5)
+
+![income cat](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/d39387a4-b723-4d36-a93a-22c1c7af6abb)
+
+![marital status](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/59f573de-8ce5-40ca-bf0c-594b861797a7)
+
+![model](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/f5b0075c-2f9e-45d5-90e0-68d65a4b4315)
+
+![occu](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/02570fde-eeea-4b04-9475-158974078e7c)
+
+![pdtline](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/f1a57a53-10c6-43b3-bf33-3ab65e69252d)
+
+![subcategory](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/5b629ed5-8e23-40ed-87d8-b2706eba06c5)
+
+![totchildren](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/8f7567b2-be89-4265-8952-26d21c3e5d14)
+   
+   
    - How can customer demographics inform targeted marketing or product strategies?
    - Which types of accounts are most likely to expand?
    - Which accounts are most likely to churn?
@@ -242,29 +294,36 @@ This is how the Entity Relationship Diagram (ERD) looks like for this database a
    - What is the customer retention rate over the years?
    - What are the sales generated by different customer segments?
 
-4. **Product Performance and Analysis:**
+5. **Product Performance and Analysis:**
    - Which products are top sellers overall and within specific time periods?
+
+![bottom 10 pdt by quantity](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/f4a88379-cf33-4d6a-96af-5482fdf09f5d)
+
+![bottom 10 pdt by sales](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/99bb74d6-1333-47c9-9eb8-1b27b1ff231d)
+
+![top 10 pdt by quantity](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/070a7bb9-93a8-4002-a12c-ec83e6a8ae97)
+
+![top 10 pdt by sales](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/32c7ce1e-e1e0-4345-99ac-29a5d9fe0082)
+
+
    - Are there products that are consistently underperforming or experiencing declining sales?
    - What is the relationship between product features (size, color, price range) and sales performance?
    
-5. **Territory and Regional Analysis:**
+6. **Territory and Regional Analysis:**
    - How do sales vary across different territories or regions?
-   - Are there geographical patterns in sales performance?
+![country by year and sales](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/66cf5d29-1728-47e7-96a9-c8c47807d41f)
+
+
+    - Are there geographical patterns in sales performance?
    - Which territories show the highest growth potential or need additional focus?
 
-6. **Order Details and Customer Behavior:**
+8. **Order Details and Customer Behavior:**
    - What are the average order sizes and frequencies?
    - Are there any trends in customer purchasing behavior (e.g., repeat purchases, cross-selling opportunities)?
    - How do promotions or discounts impact order volumes?
 
-9. **Forecasting and Predictive Analysis:**
-   - Can historical sales data be used to forecast future sales trends?
-   - What factors (economic, seasonal, promotional) influence sales forecasts the most?
-   - How accurate are our sales predictions compared to actual outcomes?
-
-## Data Analysis:
-
 ## RFM(Recency, Frequency, Monetary) Analysis for Customer Segmentation:
+
 Recency, frequency, monetary value (RFM) is a model used in marketing analysis that segments a company’s customer base by their purchasing patterns or habits. We evaluate these metrics by asking these questions -
 * Recency: When was the last sales transaction with this customer?
 * Frequency: How often do we sell to this customer?
@@ -348,9 +407,11 @@ Segmenting customers based on RFM (Recency, Frequency, Monetary) scores into 5-6
      - Very Low Monetary Value: Rarely spends or spent minimally.
    - **Behavior:** High risk of churn or already churned. Implement aggressive win-back strategies, personalized reactivation offers, and customer feedback surveys to understand reasons for churn.
 
+![rfm segments](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/2e170b4e-360e-4ca9-ba48-83b59750de37)
 
+![top 10 rfm customer](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/97ebefdf-9096-4a5d-9f56-32e5e04cce10)
 
-### Products Analysis:
+![bottom 10 rfm customers](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/095eb646-bbc7-4f29-a0d3-533fde1844f3)
 
 ## Interpretation of Results:
 
