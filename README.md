@@ -211,6 +211,7 @@ After cleaning and removing the redundant columns, I loaded the datasets into Al
 
 This is how the Entity Relationship Diagram (ERD) looks like for this database after transformation - 
 
+![ERD](https://github.com/Arpita-deb/Arpita-deb/assets/139372731/14957f04-f5a7-4847-b320-df028141849d)
 
 ## Data Exploration: 
 
@@ -220,18 +221,18 @@ This is how the Entity Relationship Diagram (ERD) looks like for this database a
    - Are there any seasonal patterns or fluctuations in sales?
    - How do different product categories perform over time?
    - What is the total revenue generated and quantity sold from sales over the years?
+
+![sales growth rate](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/32a05292-a8ff-4ae2-8af1-e0d5ca7444b9)
+
    - What is the total monthly revenue generated  and quantity sold from sales over the years?
 
 ![yearly and monthly sales](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/988d4b1e-39a8-41e9-9994-76fe754f2705)
 
    - What is the total quarterly generated and quantity sold  from sales over the years?
-   - What is the total weekly generated and quantity sold  from sales over the years?
-   - What is the sales growth rate over the years?
-
-![sales growth rate](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/123db438-39e4-4aba-9773-d46792539b22)
-
    
    - What is the average order value per order?
+![average order frequency](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/7f261478-ef90-4515-ac3b-b09000fe564b)
+
 
 1. **Budget vs. Actual Analysis:**
    - How does actual sales data from 2016 compare to the budgeted sales figures?
