@@ -180,23 +180,18 @@ Metrics will help us measure and evaluate the sales performance, and that can pr
 1. **Sales Revenue**: Total revenue generated from sales over a specific period.
 2. **Sales Quantity**: Total number of units or products sold.
 3. **Average Order Value (AOV)**: Average revenue earned per order.
-4. **Customer Acquisition Cost (CAC)**: Cost incurred to acquire a new customer.
-5. **Customer Lifetime Value (CLV)**: Predicted revenue that a customer will generate over their lifetime.
-6. **Sales Growth Rate**: Percentage increase or decrease in sales over a defined period.
-7. **Customer Retention Rate**: Percentage of customers retained over a period.
-8. **Sales by Product Category**: Revenue or quantity of sales for each product category.
-9. **Sales by Customer Segment**: Revenue or quantity of sales by different customer segments (e.g., new customers vs. returning customers).
-10. **Sales by Territory**: Revenue or quantity of sales by geographical territory.
-11. **Sales by Time Period (Calendar)**: Revenue or quantity of sales analyzed over different time periods (daily, weekly, monthly, quarterly, annually).
-12. **Product Performance**: Analysis of how well each product is selling (e.g., top-selling products, slow-moving products).
-13. **Customer Churn Rate**: Percentage of customers who stopped buying your product or service.
-
+4. **Customer Lifetime Duration**: How long ago customer last interacted with the business.
+5. **Sales Growth Rate**: Percentage increase or decrease in sales over a defined period.
+6. **Sales by Customer Segment**: Revenue or quantity of sales by different customer segments (e.g., new customers vs. returning customers).
+7. **Sales by Product Category**: Revenue or quantity of sales for each product category.
+8. **Sales by Territory**: Revenue or quantity of sales by geographical territory.
+9. **Sales by Time Period (Calendar)**: Revenue or quantity of sales analyzed over different time periods (daily, weekly, monthly, quarterly, annually).
+10. **Product Performance**: Analysis of how well each product is selling (e.g., top-selling products, slow-moving products).
+    
 ## Data Cleaning:
 
 I used Microsoft Excel for cleaning the datasets. In this phase I checked for duplicate entries, corrected typographical errors, joined column from external dataset, removed redundant columns, organized the data by sorting and filtering. 
 In addition to the existing tables, I have also used an updated [AdventureWorks sample databases](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) for imputing missing values in the existing tables. For this task I used Microsoft SQL Server for querying the relevant data.
-
-I've documented all the changes made in the datasets in this [Changelog](https://docs.google.com/document/d/1Lkti0vkrVCjyIRbY__gWmLg4-YVXavDR0ro0j2RtG0Q/edit?usp=sharing).
 
 ## Data Transformation:
 
@@ -206,94 +201,254 @@ After cleaning and removing the redundant columns, I loaded the datasets into Al
 2. Customer_Order_Details - 5 columns and 6619 rows
 3. Sales_Data - 18 columns and 58189 rows
 4. Product_Details_Data - 16 columns and 406 rows
-5. Calender_Data - 7 columns and ___ rows
+5. Calender_Data - 6 columns and 2196 rows
 6. Territory_Data - 5 columns and 10 rows
+
+I've documented all the changes made in data cleaning and transformation phase in the datasets in this [Changelog](https://docs.google.com/document/d/1Lkti0vkrVCjyIRbY__gWmLg4-YVXavDR0ro0j2RtG0Q/edit?usp=sharing).
 
 This is how the Entity Relationship Diagram (ERD) looks like for this database after transformation - 
 
-![ERD](https://github.com/Arpita-deb/Arpita-deb/assets/139372731/14957f04-f5a7-4847-b320-df028141849d)
+
 
 ## Data Exploration: 
 
-1. **Sales Trends and Patterns:**
-   - What are the overall sales trends from 2014 to 2016?
+### 1. **Sales Trends and Patterns Analysis:**
+The sales data contain information about sales orders from 2014 to 2017. For this analysis I've chosed 3 years from 2014 - 2016 so that I can later compare the actual sales revenue and the budget for 2016 for some products. 
    
-   - Are there any seasonal patterns or fluctuations in sales?
-   - How do different product categories perform over time?
-   - What is the total revenue generated and quantity sold from sales over the years?
+- What are the overall sales trends from 2014 to 2016?
+   
+- Are there any seasonal patterns or fluctuations in sales?
+ 
+- How do different product categories perform over time?
+   
+- What is the total revenue generated and quantity sold from sales over the years?
 
 ![sales growth rate](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/32a05292-a8ff-4ae2-8af1-e0d5ca7444b9)
 
-   - What is the total monthly revenue generated  and quantity sold from sales over the years?
+= What is the total monthly revenue generated  and quantity sold from sales over the years?
 
 ![yearly and monthly sales](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/988d4b1e-39a8-41e9-9994-76fe754f2705)
 
-   - What is the total quarterly generated and quantity sold  from sales over the years?
+- What is the total quarterly generated and quantity sold  from sales over the years?
    
-   - What is the average order value per order?
+- What is the Average Order Value per order, Average Order Frequency and Average Order Size?
+
 ![average order frequency](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/7f261478-ef90-4515-ac3b-b09000fe564b)
 
+### 2. **Budget vs. Actual Analysis:**
 
-1. **Budget vs. Actual Analysis:**
-   - How does actual sales data from 2016 compare to the budgeted sales figures?
+To compare the budget for 2016 with the actual sales revenue, I used Total sales amount including tax for 13 products and calculated their sales per month in 2016. Then I joined this data with the Budget data, and calculated the variance. Variance is the difference between Actual revenue and the budget. The products with negative variance shows that for these products the budget has been overestimated.
+
+- How does actual sales data from 2016 compare to the budgeted sales figures?
+
 ![Budget](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/4899f741-a5ed-4ec8-b599-8d0008156b9c)
 
-   - Are there any significant deviations, and if so, what are the reasons behind them?
-   - Which products or territories contributed the most to any variance?
+- Are there any significant deviations, and if so, what are the reasons behind them?
 
-3. **Customer Segmentation and Demographics:**
+Out of 13 products 7 showed a negative variance.
+
+- Which products or territories contributed the most to any variance?
+
+Touring 2000 Blue 60 showed a significant amount of variance throughout the year especially in November where the difference between actual sales and budgeted sales exceeded about $500,000.
+
+### 3. **Customer Segmentation and Demographics:**
+
+To perform customer segmentation I joined all the datasets to get a more comprehensive and detailed view of the customers. I joined Sales, order details and customer demographic data to get sales detail for each customers as well as their demographics. Later I joined Territory to include the country of residence and product details as well. There are 36 columns and 31534 rows in total. I used this joined data for both customer segmentation and RFM Analysis separately.
+
+- What are the demographic profiles of our customers (age, gender, location)?
+
+For this analysis, we used the following demographic profiles that help to categorize customers into different groups based on similarity: Gender,Agegroup, Income Category, Marital Status, Total Children, Number of Children At Home, Education, Occupation, House Owner Flag (whether they own a house or not), Number of Cars Owned,	Country, Commute Distance and Customer Lifetime Duration (days).
+Apart from them, I have also segmented customers based on Product SubCategory,	Category,	Color,	ProductLine	and ModelName.
+
+- What are the sales generated by different customer segments?
+
+  * Agegroup
+  
+  ![age group](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/9ae06372-bd86-47d6-88f5-49ec264d3044)
+
+  * Gender
+
+  ![gender](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/448148b4-de10-49da-821c-11e18441c05b)
+
+  * Income Category
+    
+  ![income cat](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/d39387a4-b723-4d36-a93a-22c1c7af6abb)
+  
+  * Marital Status
+ 
+  ![marital status](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/59f573de-8ce5-40ca-bf0c-594b861797a7)
+  
+  * Total Children
+  
+  ![totchildren](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/8f7567b2-be89-4265-8952-26d21c3e5d14)
+ 
+  * Number of Children At Home
+  
+   ![childrenathome](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/0db0a75a-a77c-432d-91e3-68121527bf18)
+
+  * Education
+    
+  ![edu](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/db05458d-8076-4ef4-899a-a6efe435c07a)
+  
+  * Occupation
+
+  ![occu](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/02570fde-eeea-4b04-9475-158974078e7c)
+
+  * House Owner Flag (whether they own a house or not)
+  
+   ![houseowner](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b59de5a2-20d5-457c-bb1c-8bd28f1affb5)
+
+  * Number of Cars Owned
+
+  ![carsowned](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b4309459-4ec1-411f-8151-80a30dc70b1f)
+  
+  * Country
+  
+   ![country](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/5c02b698-e4a6-4022-a360-94eabb4c4544)
+  
+  * Commute Distance
+
+  ![commute](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b3e03fc4-c5df-42d7-b7a3-2c44a08ee3b1)
+
+  * Customer Lifetime Duration (days)
+    
+  ![customertype](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b59f9703-63ca-4564-8f0c-de76fce01c29)
+  
+  * Product Category
+    
+  ![category](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/7cf4ccab-46f2-415f-96bf-f558ecd05819)
+  
+  * SubCategory
+
+  ![subcategory](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/5b629ed5-8e23-40ed-87d8-b2706eba06c5)
+  
+  * ProductLine
+
+  ![pdtline](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/f1a57a53-10c6-43b3-bf33-3ab65e69252d)
+
+  * ModelName
+
+  ![model](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/f5b0075c-2f9e-45d5-90e0-68d65a4b4315)
+  
+  * Color
+
+  ![color](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/8e5a8c32-02a2-4ad4-9439-278be285fda5)
+  
+- Do certain demographics correlate with higher sales or specific product preferences?
+- How can customer demographics inform targeted marketing or product strategies?
+- Which types of accounts are most likely to expand?
+- Which accounts are most likely to churn?
+- How does customer demographics impact sales?
+
+- Find the top 10  customers by Average Order Value for 2016?
 
 ![top 10 customer by aov](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/4e0c013e-496a-4bd6-a650-52cec61c344d)
-
-    - What are the demographic profiles of our customers (age, gender, location)?
-   - Do certain demographics correlate with higher sales or specific product preferences?
   
-   ![age group](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/9ae06372-bd86-47d6-88f5-49ec264d3044)
+### 4. RFM(Recency, Frequency, Monetary) Analysis:
 
-![carsowned](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b4309459-4ec1-411f-8151-80a30dc70b1f)
+Recency, frequency, monetary value (RFM) is a model used in marketing analysis that segments a company’s customer base by their purchasing patterns or habits. 
+We evaluate these metrics by asking these questions -
 
-![category](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/7cf4ccab-46f2-415f-96bf-f558ecd05819)
+* Recency: When was the last sales transaction with this customer? 
+* Frequency: How often do we sell to this customer?
+* Monetary: How much did we sell to this customer across its entire lifetime?
 
-![childrenathome](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/0db0a75a-a77c-432d-91e3-68121527bf18)
+*Step 1 : Creating Recency, Frequency and TotalRevenue columns*
 
-![color](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/8e5a8c32-02a2-4ad4-9439-278be285fda5)
+Recency: Using 2017-01-01 as our analysis day, I've calculated the difference between this day and the Last Order date for each customer.
+Frequency: To calculate frequency, I grouped the data by customers and counted the distinct SalesOrderNumber to give us the variable F.
+TotalRevenue: Finally, to calculate monetary value, I grouped the data by customers and summarized the total transaction amount as the variable M.
 
-![commute](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b3e03fc4-c5df-42d7-b7a3-2c44a08ee3b1)
+*Step 2: Creating R, F, M columns*
 
-
-![country](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/5c02b698-e4a6-4022-a360-94eabb4c4544)
-
-![customertype](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b59f9703-63ca-4564-8f0c-de76fce01c29)
-
-![edu](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/db05458d-8076-4ef4-899a-a6efe435c07a)
-
-![gender](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/448148b4-de10-49da-821c-11e18441c05b)
-
-![houseowner](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b59de5a2-20d5-457c-bb1c-8bd28f1affb5)
-
-![income cat](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/d39387a4-b723-4d36-a93a-22c1c7af6abb)
-
-![marital status](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/59f573de-8ce5-40ca-bf0c-594b861797a7)
-
-![model](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/f5b0075c-2f9e-45d5-90e0-68d65a4b4315)
-
-![occu](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/02570fde-eeea-4b04-9475-158974078e7c)
-
-![pdtline](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/f1a57a53-10c6-43b3-bf33-3ab65e69252d)
-
-![subcategory](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/5b629ed5-8e23-40ed-87d8-b2706eba06c5)
-
-![totchildren](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/8f7567b2-be89-4265-8952-26d21c3e5d14)
+Transforming these columns into R, F, M columns by giving each customer a score between 1 to 5.
+   -F = 1: when Frequency < 7
+   -F = 2: when Frequency >= 7 and <12
+   -F = 3: when Frequency>=12 and < 17
+   -F = 4: when Frequency>=17 and < 22
+   -F = 5: when Frequency>= 22
    
-   
-   - How can customer demographics inform targeted marketing or product strategies?
-   - Which types of accounts are most likely to expand?
-   - Which accounts are most likely to churn?
-   - How does customer demographics impact sales?
-   - What is the customer acquisition cost?
-   - What is the customer lifetime value and customer churn rate?
-   - What is the customer retention rate over the years?
-   - What are the sales generated by different customer segments?
+   -F = 1: when Frequency < 7
+   -F = 2: when Frequency >= 7 and <12
+   -F = 3: when Frequency>=12 and < 17
+   -F = 4: when Frequency>=17 and < 22
+   -F = 5: when Frequency>= 22
+
+   -M = 1: when TotalRevenue < 2883.8808
+   -M = 2: when TotalRevenue >=2883.8808 and < 5752.6632
+   -M = 3: when TotalRevenue >=5752.6632 and < 8621.4456
+   -M = 4: when TotalRevenue >= 8621.4456 and < 11490.228
+   -M = 5: when TotalRevenue >=11490.228
+
+*Step 3: RFMProfile Score*
+
+Then created RFMProfile which is the sum of the three variables R, F and M. A value of 15 (R = 5, F=5, M = 5) will give us the highly valued customers whereas a value as low as 3 (R=1, F=1, M=1) will give us the customers who have churned.
+
+*Step 4: Segmenting customers based on RFM (Recency, Frequency, Monetary) scores 6 segments*
+
+Criteria for 5-6 Segments Based on RFM Scores:
+
+1. **Champions:**
+   - **RFM Score:** 
+   - **Characteristics:**
+     - High Recency: Recently made purchases.
+     - High Frequency: Regularly purchases.
+     - High Monetary Value: Spends significantly per transaction.
+   - **Behavior:** Loyal customers who are likely to make frequent high-value purchases. Target with exclusive offers and rewards to maintain loyalty.
+
+2. **Potential Loyalists:**
+   - **RFM Score:**  
+   - **Characteristics:**
+     - High Recency: Recently made purchases.
+     - Moderate to High Frequency: Regularly purchases but not as frequently as Champions.
+     - Moderate to High Monetary Value: Spends decently per transaction.
+   - **Behavior:** Likely to become Champions with targeted incentives and personalized recommendations. Nurture with loyalty programs and personalized communications.
+
+3. **Recent Customers:**
+   - **RFM Score:** 
+   - **Characteristics:**
+     - High Recency: Recently made purchases.
+     - Low to Moderate Frequency: Makes purchases occasionally.
+     - Moderate Monetary Value: Spends moderately per transaction.
+   - **Behavior:** Recent buyers who may need encouragement to increase frequency. Focus on engagement strategies and product education to drive repeat purchases.
+
+4. **Promising New Customers:**
+   - **RFM Score:** 
+   - **Characteristics:**
+     - Moderate Recency: Made purchases somewhat recently.
+     - Low Frequency: Rarely purchases.
+     - Low Monetary Value: Spends minimally per transaction.
+   - **Behavior:** New customers who need nurturing to increase engagement and loyalty. Offer welcome discounts, personalized recommendations, and educational content to encourage repeat purchases.
+
+5. **Needs Attention:**
+   - **RFM Score:** 
+   - **Characteristics:**
+     - Low Recency: Hasn't made purchases recently.
+     - Low Frequency: Rarely purchases.
+     - Low Monetary Value: Spends minimally per transaction.
+   - **Behavior:** At risk of churn. Re-engage with targeted reactivation campaigns, special offers, and personalized win-back strategies to regain their interest.
+
+6. **At Risk/Churned Customers:**
+   - **RFM Score:** 
+   - **Characteristics:**
+     - Very Low Recency: Hasn't purchased in a long time.
+     - Very Low Frequency: Rarely or never purchases.
+     - Very Low Monetary Value: Rarely spends or spent minimally.
+   - **Behavior:** High risk of churn or already churned. Implement aggressive win-back strategies, personalized reactivation offers, and customer feedback surveys to understand reasons for churn.
+
+*Step 5: Calculations*
+
+Number of customers per segment -
+
+![rfm segments](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/2e170b4e-360e-4ca9-ba48-83b59750de37)
+
+Top 10 RFM customer
+
+![top 10 rfm customer](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/97ebefdf-9096-4a5d-9f56-32e5e04cce10)
+
+Bottom 10 RFM customers
+![bottom 10 rfm customers](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/095eb646-bbc7-4f29-a0d3-533fde1844f3)
+
 
 5. **Product Performance and Analysis:**
    - Which products are top sellers overall and within specific time periods?
@@ -323,96 +478,7 @@ This is how the Entity Relationship Diagram (ERD) looks like for this database a
    - Are there any trends in customer purchasing behavior (e.g., repeat purchases, cross-selling opportunities)?
    - How do promotions or discounts impact order volumes?
 
-## RFM(Recency, Frequency, Monetary) Analysis for Customer Segmentation:
 
-Recency, frequency, monetary value (RFM) is a model used in marketing analysis that segments a company’s customer base by their purchasing patterns or habits. We evaluate these metrics by asking these questions -
-* Recency: When was the last sales transaction with this customer?
-* Frequency: How often do we sell to this customer?
-* Monetary: How much did we sell to this customer across its entire lifetime?
-
-We'll then give each customer a RFM score from 1-5 with 1 being not good and 5 excellent. 
-
-### Recency: (2, 366)
-
-   - 5: R< 75
-   - 4: R>= 75 and R <148
-   - 3: R>= 148 and R <221
-   - 2: R>=221 and R <294
-   - 1: R>=294
-
-### Frequency: (2, 26)
-
-   - 1: F<7
-   - 2: F>= 7 and F<12
-   - 3: F>=12 and F< 17
-   - 4: F>=17 and F< 22
-   - 5: F>= 22
-
-### Monetary: (15.0984, 14359.0104)
-
-   - 1: M< 2883.8808
-   - 2: M>=2883.8808 and M< 5752.6632
-   - 3: M>=5752.6632 and M< 8621.4456
-   - 4: M>= 8621.4456 and M< 11490.228
-   - 5: M>=11490.228
-
-Segmenting customers based on RFM (Recency, Frequency, Monetary) scores into 5-6 segments allows you to effectively target different groups with tailored marketing strategies and customer experiences. Here are some criteria and characteristics you can consider for each segment:
-
-### Criteria for 5-6 Segments Based on RFM Scores:
-
-1. **Champions:**
-   - **RFM Score:** 555
-   - **Characteristics:**
-     - High Recency: Recently made purchases.
-     - High Frequency: Regularly purchases.
-     - High Monetary Value: Spends significantly per transaction.
-   - **Behavior:** Loyal customers who are likely to make frequent high-value purchases. Target with exclusive offers and rewards to maintain loyalty.
-
-2. **Potential Loyalists:**
-   - **RFM Score:**  544 or 545 or 554
-   - **Characteristics:**
-     - High Recency: Recently made purchases.
-     - Moderate to High Frequency: Regularly purchases but not as frequently as Champions.
-     - Moderate to High Monetary Value: Spends decently per transaction.
-   - **Behavior:** Likely to become Champions with targeted incentives and personalized recommendations. Nurture with loyalty programs and personalized communications.
-
-3. **Recent Customers:**
-   - **RFM Score:** 534, 543, 533
-   - **Characteristics:**
-     - High Recency: Recently made purchases.
-     - Low to Moderate Frequency: Makes purchases occasionally.
-     - Moderate Monetary Value: Spends moderately per transaction.
-   - **Behavior:** Recent buyers who may need encouragement to increase frequency. Focus on engagement strategies and product education to drive repeat purchases.
-
-4. **Promising New Customers:**
-   - **RFM Score:** 422, 322, 333,323, 433, 423
-   - **Characteristics:**
-     - Moderate Recency: Made purchases somewhat recently.
-     - Low Frequency: Rarely purchases.
-     - Low Monetary Value: Spends minimally per transaction.
-   - **Behavior:** New customers who need nurturing to increase engagement and loyalty. Offer welcome discounts, personalized recommendations, and educational content to encourage repeat purchases.
-
-5. **Needs Attention:**
-   - **RFM Score:** 222, 221, 212
-   - **Characteristics:**
-     - Low Recency: Hasn't made purchases recently.
-     - Low Frequency: Rarely purchases.
-     - Low Monetary Value: Spends minimally per transaction.
-   - **Behavior:** At risk of churn. Re-engage with targeted reactivation campaigns, special offers, and personalized win-back strategies to regain their interest.
-
-6. **At Risk/Churned Customers:**
-   - **RFM Score:** 111
-   - **Characteristics:**
-     - Very Low Recency: Hasn't purchased in a long time.
-     - Very Low Frequency: Rarely or never purchases.
-     - Very Low Monetary Value: Rarely spends or spent minimally.
-   - **Behavior:** High risk of churn or already churned. Implement aggressive win-back strategies, personalized reactivation offers, and customer feedback surveys to understand reasons for churn.
-
-![rfm segments](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/2e170b4e-360e-4ca9-ba48-83b59750de37)
-
-![top 10 rfm customer](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/97ebefdf-9096-4a5d-9f56-32e5e04cce10)
-
-![bottom 10 rfm customers](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/095eb646-bbc7-4f29-a0d3-533fde1844f3)
 
 ## Interpretation of Results:
 
