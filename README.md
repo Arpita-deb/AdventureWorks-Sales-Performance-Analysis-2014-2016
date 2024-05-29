@@ -362,34 +362,45 @@ TotalRevenue: Finally, to calculate monetary value, I grouped the data by custom
 *Step 2: Creating R, F, M columns*
 
 Transforming these columns into R, F, M columns by giving each customer a score between 1 to 5.
-   -F = 1: when Frequency < 7
-   -F = 2: when Frequency >= 7 and <12
-   -F = 3: when Frequency>=12 and < 17
-   -F = 4: when Frequency>=17 and < 22
-   -F = 5: when Frequency>= 22
-   
-   -F = 1: when Frequency < 7
-   -F = 2: when Frequency >= 7 and <12
-   -F = 3: when Frequency>=12 and < 17
-   -F = 4: when Frequency>=17 and < 22
-   -F = 5: when Frequency>= 22
 
-   -M = 1: when TotalRevenue < 2883.8808
-   -M = 2: when TotalRevenue >=2883.8808 and < 5752.6632
-   -M = 3: when TotalRevenue >=5752.6632 and < 8621.4456
-   -M = 4: when TotalRevenue >= 8621.4456 and < 11490.228
-   -M = 5: when TotalRevenue >=11490.228
+  - F = 1: when Recency >= 294 days
+  - F = 2: when Recency >= 221 and <294
+  - F = 3: when Recency>=148 and < 221
+  - F = 4: when Recency>=75 and < 148
+  - R = 5: when Recency< 75
+   
+  - F = 1: when Frequency < 7
+  - F = 2: when Frequency >= 7 and <12
+  - F = 3: when Frequency>=12 and < 17
+  - F = 4: when Frequency>=17 and < 22
+  - F = 5: when Frequency>= 22
+
+  - M = 1: when TotalRevenue < 2883.8808
+  - M = 2: when TotalRevenue >=2883.8808 and < 5752.6632
+  - M = 3: when TotalRevenue >=5752.6632 and < 8621.4456
+  - M = 4: when TotalRevenue >= 8621.4456 and < 11490.228
+  - M = 5: when TotalRevenue >=11490.228
 
 *Step 3: RFMProfile Score*
 
-Then created RFMProfile which is the sum of the three variables R, F and M. A value of 15 (R = 5, F=5, M = 5) will give us the highly valued customers whereas a value as low as 3 (R=1, F=1, M=1) will give us the customers who have churned.
+Then created RFMProfile which is the sum of the three variables R, F and M. 
+
+A value of 15 (R = 5, F=5, M = 5) will give us the highly valued customers whereas a value as low as 3 (R=1, F=1, M=1) will give us the customers who have churned.
 
 *Step 4: Segmenting customers based on RFM (Recency, Frequency, Monetary) scores 6 segments*
 
 Criteria for 5-6 Segments Based on RFM Scores:
 
+If [RFMProfile] = 15 then 'Champion'
+elseif [RFMProfile] >= 12 and  [RFMProfile] <15  then 'Potential Loyalists'
+elseif [RFMProfile] >= 9 and [RFMProfile] < 12 then 'Recent Customers'
+elseif [RFMProfile] >= 6 and [RFMProfile] < 9 then 'Promising New Customers'
+elseif [RFMProfile] >= 4 and [RFMProfile] < 6 then 'Needs Attention'
+elseif [RFMProfile] >=2 and  [RFMProfile]< 4 then 'At Risk Customers'
+else'Churned Customers'
+
 1. **Champions:**
-   - **RFM Score:** 
+   - **RFM Score:** 15
    - **Characteristics:**
      - High Recency: Recently made purchases.
      - High Frequency: Regularly purchases.
@@ -397,7 +408,7 @@ Criteria for 5-6 Segments Based on RFM Scores:
    - **Behavior:** Loyal customers who are likely to make frequent high-value purchases. Target with exclusive offers and rewards to maintain loyalty.
 
 2. **Potential Loyalists:**
-   - **RFM Score:**  
+   - **RFM Score:**  between 12 and 15
    - **Characteristics:**
      - High Recency: Recently made purchases.
      - Moderate to High Frequency: Regularly purchases but not as frequently as Champions.
@@ -405,7 +416,7 @@ Criteria for 5-6 Segments Based on RFM Scores:
    - **Behavior:** Likely to become Champions with targeted incentives and personalized recommendations. Nurture with loyalty programs and personalized communications.
 
 3. **Recent Customers:**
-   - **RFM Score:** 
+   - **RFM Score:**  between 9 and 12
    - **Characteristics:**
      - High Recency: Recently made purchases.
      - Low to Moderate Frequency: Makes purchases occasionally.
@@ -413,7 +424,7 @@ Criteria for 5-6 Segments Based on RFM Scores:
    - **Behavior:** Recent buyers who may need encouragement to increase frequency. Focus on engagement strategies and product education to drive repeat purchases.
 
 4. **Promising New Customers:**
-   - **RFM Score:** 
+   - **RFM Score:** between 6 and 9
    - **Characteristics:**
      - Moderate Recency: Made purchases somewhat recently.
      - Low Frequency: Rarely purchases.
@@ -421,20 +432,28 @@ Criteria for 5-6 Segments Based on RFM Scores:
    - **Behavior:** New customers who need nurturing to increase engagement and loyalty. Offer welcome discounts, personalized recommendations, and educational content to encourage repeat purchases.
 
 5. **Needs Attention:**
-   - **RFM Score:** 
+   - **RFM Score:** between 4 and 6
    - **Characteristics:**
      - Low Recency: Hasn't made purchases recently.
      - Low Frequency: Rarely purchases.
      - Low Monetary Value: Spends minimally per transaction.
    - **Behavior:** At risk of churn. Re-engage with targeted reactivation campaigns, special offers, and personalized win-back strategies to regain their interest.
 
-6. **At Risk/Churned Customers:**
-   - **RFM Score:** 
+6. **At Risk Customers:**
+   - **RFM Score:** between 4 and 2
    - **Characteristics:**
      - Very Low Recency: Hasn't purchased in a long time.
      - Very Low Frequency: Rarely or never purchases.
      - Very Low Monetary Value: Rarely spends or spent minimally.
    - **Behavior:** High risk of churn or already churned. Implement aggressive win-back strategies, personalized reactivation offers, and customer feedback surveys to understand reasons for churn.
+
+7. **Churned Customers**
+   - **RFM Score:** less than 2
+   - **Characteristics:**
+     - Very Low Recency: Hasn't purchased in a long time.
+     - Very Low Frequency: Rarely or never purchases.
+     - Very Low Monetary Value: Rarely spends or spent minimally.
+   - **Behavior:** Already churned. Implement aggressive win-back strategies, personalized reactivation offers, and customer feedback surveys to understand reasons for churn.
 
 *Step 5: Calculations*
 
@@ -442,42 +461,41 @@ Number of customers per segment -
 
 ![rfm segments](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/2e170b4e-360e-4ca9-ba48-83b59750de37)
 
-Top 10 RFM customer
+Top 10 RFM customer -
 
 ![top 10 rfm customer](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/97ebefdf-9096-4a5d-9f56-32e5e04cce10)
 
-Bottom 10 RFM customers
+Bottom 10 RFM customers -
+
 ![bottom 10 rfm customers](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/095eb646-bbc7-4f29-a0d3-533fde1844f3)
 
 
-5. **Product Performance and Analysis:**
-   - Which products are top sellers overall and within specific time periods?
-
-![bottom 10 pdt by quantity](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/f4a88379-cf33-4d6a-96af-5482fdf09f5d)
-
-![bottom 10 pdt by sales](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/99bb74d6-1333-47c9-9eb8-1b27b1ff231d)
+### 5. **Product Performance and Analysis:**
+  
+- Which products are top sellers overall and within specific time periods?
 
 ![top 10 pdt by quantity](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/070a7bb9-93a8-4002-a12c-ec83e6a8ae97)
 
 ![top 10 pdt by sales](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/32c7ce1e-e1e0-4345-99ac-29a5d9fe0082)
 
+- Are there products that are consistently underperforming or experiencing declining sales?
+    
+![bottom 10 pdt by quantity](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/f4a88379-cf33-4d6a-96af-5482fdf09f5d)
 
-   - Are there products that are consistently underperforming or experiencing declining sales?
-   - What is the relationship between product features (size, color, price range) and sales performance?
+![bottom 10 pdt by sales](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/99bb74d6-1333-47c9-9eb8-1b27b1ff231d)
+  
+- What is the relationship between product features (size, color, price range) and sales performance?
    
-6. **Territory and Regional Analysis:**
-   - How do sales vary across different territories or regions?
+
+### 6. **Territory and Regional Analysis:**
+
+- How do sales vary across different territories or regions?
+
 ![country by year and sales](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/66cf5d29-1728-47e7-96a9-c8c47807d41f)
 
+- Are there geographical patterns in sales performance?
 
-    - Are there geographical patterns in sales performance?
-   - Which territories show the highest growth potential or need additional focus?
-
-8. **Order Details and Customer Behavior:**
-   - What are the average order sizes and frequencies?
-   - Are there any trends in customer purchasing behavior (e.g., repeat purchases, cross-selling opportunities)?
-   - How do promotions or discounts impact order volumes?
-
+- Which territories show the highest growth potential or need additional focus?
 
 
 ## Interpretation of Results:
