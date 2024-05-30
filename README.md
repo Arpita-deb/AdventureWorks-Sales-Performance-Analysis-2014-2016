@@ -24,9 +24,8 @@ In this project I'll perform the following tasks -
 3. Compare the budgeted monthly sales and actual monthly sales in 2016.
 4. Categorize customers based on their buying behavior and analyze how different segments contribute to the company's revenue.
 5. Identify the top-selling products in terms of revenue and quantity.
-6. Develope predictive models to optimize pricing strategies, identify customer segments, and personalize marketing campaigns.
-8. Communicate findings and recommendations to stakeholders in a clear and concise manner.
-9. Provide actionable insights and recommendations to senior management to support strategic decision-making.
+6. Communicate findings and recommendations to stakeholders in a clear and concise manner.
+7. Provide actionable insights and recommendations to senior management to support strategic decision-making.
 
 
 ## Domain:
@@ -222,17 +221,20 @@ This is how the Entity Relationship Diagram (ERD) looks like for this database a
 
 - Are there any seasonal patterns or fluctuations in sales?
  
+In the first glance we notice that 2016 has a much higher sales revenue compared to 2014 and 2015. This is reflected again in all the consequetive charts (drilled down to quarter and months) below. There's a gradual growth apparent for 2016, but a decline in 2015 after February till June. Also there is a significant spike in June for each year, which could be linked to summer season promotions or events.
+
+After June sales drop down in July and sees little or no increase in revenue until the end of the year, except for 2016. The end-of-year months, November and December, see an increase in revenue, likely due to holiday shopping and year-end sales events.
    
 - What is the total revenue generated and quantity sold from sales over the years?
 
  ![sales growth rate](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/32a05292-a8ff-4ae2-8af1-e0d5ca7444b9)
 
-- What is the total monthly revenue generated  and quantity sold from sales over the years?
+- What is the total monthly revenue generated and quantity sold from sales over the years?
 
  ![yearly and monthly sales](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/988d4b1e-39a8-41e9-9994-76fe754f2705)
 
  
-- What is the total quarterly generated and quantity sold  from sales over the years?
+- What is the total quarterly generated and quantity sold from sales over the years?
 
  ![1 3](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/0791f657-8dc9-4406-8a75-3a1e45e651d5)
 
@@ -260,7 +262,9 @@ This is how the Entity Relationship Diagram (ERD) looks like for this database a
 
  Touring 2000 Blue 60 showed a significant amount of variance throughout the year especially in November where the difference between actual sales and budgeted sales exceeded about $500,000. When I checked for the reason behind the significant variance of this product by further drilling down the data by country and months, I found that in many countries such as in Germany, Canada, Australia and France this product has not been sold in many months. This might be a reason why the actual sales amount lagged so much behind the budgeted sales.
 
-Moreover, a different price of products in different countries at different month might also contribute to lower sales amount compared to the budgeted sales. 
+Moreover, a different price of products in different countries in different months might also contribute to lower sales amount compared to the budgeted sales. 
+
+Since the budget data does not contain the number of sales per product/month/country or other relevant data to compare it with actual sales, I could not pinpoint the exact reasons behind the variances of these products.
 
 ### 3. **Customer Segmentation and Demographics:**
 
@@ -366,6 +370,9 @@ Apart from them, I have also segmented customers based on Product SubCategory,	C
   ![color](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/8359e3ab-49bf-4e5a-8d97-e4265f2c9ba9)
 
 - Do certain demographics correlate with higher sales or specific product preferences?
+
+
+
 - How can customer demographics inform targeted marketing or product strategies?
 - Which types of accounts are most likely to expand?
 - Which accounts are most likely to churn?
@@ -383,13 +390,13 @@ Apart from them, I have also segmented customers based on Product SubCategory,	C
 * Frequency: How often do we sell to this customer?
 * Monetary: How much did we sell to this customer across its entire lifetime?
 
-*Step 1 : Creating Recency, Frequency and TotalRevenue columns*
+#### *Step 1 : Creating Recency, Frequency and TotalRevenue columns*
 
  Recency: Using 2017-01-01 as our analysis day, I've calculated the difference between this day and the Last Order date for each customer.
  Frequency: To calculate frequency, I grouped the data by customers and counted the distinct SalesOrderNumber to give us the variable F.
  TotalRevenue: Finally, to calculate monetary value, I grouped the data by customers and summarized the total transaction amount as the variable M.
 
-*Step 2: Creating R, F, M columns*
+#### *Step 2: Creating R, F, M columns*
 
  Transforming these columns into R, F, M columns by giving each customer a score between 1 to 5.
 * R Scoring
@@ -413,23 +420,15 @@ Apart from them, I have also segmented customers based on Product SubCategory,	C
   - M = 4: when TotalRevenue >= 8621.4456 and < 11490.228
   - M = 5: when TotalRevenue >=11490.228
 
-*Step 3: RFMProfile Score*
+#### *Step 3: RFMProfile Score*
 
 Then I created RFMProfile which is the sum of the three variables R, F and M. 
 
 A value of 15 (R = 5, F=5, M = 5) will give us the highly valued customers whereas a value as low as 3 (R=1, F=1, M=1) will give us the customers who have churned.
 
-*Step 4: Segmenting customers based on RFM (Recency, Frequency, Monetary) scores 6 segments*
+#### *Step 4: Segmenting customers based on RFM (Recency, Frequency, Monetary) scores 6 segments*
 
 **Criteria for 5-6 Segments Based on RFM Scores:**
-
-If [RFMProfile] = 15 then 'Champion'
-elseif [RFMProfile] >= 12 and  [RFMProfile] <15  then 'Potential Loyalists'
-elseif [RFMProfile] >= 9 and [RFMProfile] < 12 then 'Recent Customers'
-elseif [RFMProfile] >= 6 and [RFMProfile] < 9 then 'Promising New Customers'
-elseif [RFMProfile] >= 4 and [RFMProfile] < 6 then 'Needs Attention'
-elseif [RFMProfile] >=2 and  [RFMProfile]< 4 then 'At Risk Customers'
-else'Churned Customers'
 
 1. **Champions:**
    - **RFM Score:** 15
@@ -437,7 +436,7 @@ else'Churned Customers'
      - High Recency: Recently made purchases.
      - High Frequency: Regularly purchases.
      - High Monetary Value: Spends significantly per transaction.
-   - **Behavior:** Loyal customers who are likely to make frequent high-value purchases. Target with exclusive offers and rewards to maintain loyalty.
+   - **Behavior:** Loyal customers who are likely to make frequent high-value purchases. 
 
 2. **Potential Loyalists:**
    - **RFM Score:**  between 12 and 15
@@ -445,7 +444,7 @@ else'Churned Customers'
      - High Recency: Recently made purchases.
      - Moderate to High Frequency: Regularly purchases but not as frequently as Champions.
      - Moderate to High Monetary Value: Spends decently per transaction.
-   - **Behavior:** Likely to become Champions with targeted incentives and personalized recommendations. Nurture with loyalty programs and personalized communications.
+   - **Behavior:** Likely to become Champions with targeted incentives and personalized recommendations.
 
 3. **Recent Customers:**
    - **RFM Score:**  between 9 and 12
@@ -453,7 +452,7 @@ else'Churned Customers'
      - High Recency: Recently made purchases.
      - Low to Moderate Frequency: Makes purchases occasionally.
      - Moderate Monetary Value: Spends moderately per transaction.
-   - **Behavior:** Recent buyers who may need encouragement to increase frequency. Focus on engagement strategies and product education to drive repeat purchases.
+   - **Behavior:** Recent buyers who may need encouragement to increase frequency. 
 
 4. **Promising New Customers:**
    - **RFM Score:** between 6 and 9
@@ -461,7 +460,7 @@ else'Churned Customers'
      - Moderate Recency: Made purchases somewhat recently.
      - Low Frequency: Rarely purchases.
      - Low Monetary Value: Spends minimally per transaction.
-   - **Behavior:** New customers who need nurturing to increase engagement and loyalty. Offer welcome discounts, personalized recommendations, and educational content to encourage repeat purchases.
+   - **Behavior:** New customers who need nurturing to increase engagement and loyalty. 
 
 5. **Needs Attention:**
    - **RFM Score:** between 4 and 6
@@ -469,7 +468,7 @@ else'Churned Customers'
      - Low Recency: Hasn't made purchases recently.
      - Low Frequency: Rarely purchases.
      - Low Monetary Value: Spends minimally per transaction.
-   - **Behavior:** At risk of churn. Re-engage with targeted reactivation campaigns, special offers, and personalized win-back strategies to regain their interest.
+   - **Behavior:** At risk of churn. 
 
 6. **At Risk Customers:**
    - **RFM Score:** between 4 and 2
@@ -477,7 +476,7 @@ else'Churned Customers'
      - Very Low Recency: Hasn't purchased in a long time.
      - Very Low Frequency: Rarely or never purchases.
      - Very Low Monetary Value: Rarely spends or spent minimally.
-   - **Behavior:** High risk of churn or already churned. Implement aggressive win-back strategies, personalized reactivation offers, and customer feedback surveys to understand reasons for churn.
+   - **Behavior:** High risk of churn or already churned.
 
 7. **Churned Customers**
    - **RFM Score:** less than 2
@@ -485,11 +484,11 @@ else'Churned Customers'
      - Very Low Recency: Hasn't purchased in a long time.
      - Very Low Frequency: Rarely or never purchases.
      - Very Low Monetary Value: Rarely spends or spent minimally.
-   - **Behavior:** Already churned. Implement aggressive win-back strategies, personalized reactivation offers, and customer feedback surveys to understand reasons for churn.
+   - **Behavior:** Already churned. 
 
-*Step 5: Calculations*
+#### *Step 5: Calculations*
 
-* **Number of customers per segment **-
+* **Number of customers per segment** -
 
 ![rfm segments](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/2e170b4e-360e-4ca9-ba48-83b59750de37)
 
@@ -503,6 +502,12 @@ As can be seen from the segments, we don't have all the 7 segments of customers 
 
 ![bottom 10 rfm customers](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/095eb646-bbc7-4f29-a0d3-533fde1844f3)
 
+#### *Step 6: Recommendations for each segments*:
+
+   * Segment 5 (**Needs Attention**) : Re-engage with targeted reactivation campaigns, special offers, and personalized win-back strategies to regain their interest.
+   * Segment 6 (**At Risk Customers**) : Implement aggressive win-back strategies, personalized reactivation offers, and customer feedback surveys to understand reasons for churn.
+   * Segment 4 (**Promising New Customers**) :  Offer welcome discounts, personalized recommendations, and educational content to encourage repeat purchases.
+   * Segment 3 (**Recent Customers**) : Focus on engagement strategies and product education to drive repeat purchases.
 
 ### 5. **Product Performance and Analysis:**
   
@@ -548,6 +553,7 @@ As can be seen from the segments, we don't have all the 7 segments of customers 
 
 - Which territories show the highest growth potential or need additional focus?
 
+The United States and Australia are already producing high revenue. However, Canada and the UK also showing growth potential in terms of quantity of product purchase.
 
 ## Interpretation of Results:
 
