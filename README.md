@@ -232,7 +232,7 @@ After June sales drop down in July and sees little or no increase in revenue unt
 - What is the total monthly revenue generated and quantity sold from sales over the years?
 
  ![yearly and monthly sales](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/988d4b1e-39a8-41e9-9994-76fe754f2705)
-
+![monthly sales and quatity](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/76331e0d-6136-4bf2-af6f-227a15919996)
  
 - What is the total quarterly generated and quantity sold from sales over the years?
 
@@ -369,17 +369,13 @@ Apart from them, I have also segmented customers based on Product SubCategory,	C
   ![color](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/8e5a8c32-02a2-4ad4-9439-278be285fda5)
   ![color](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/8359e3ab-49bf-4e5a-8d97-e4265f2c9ba9)
 
-- Do certain demographics correlate with higher sales or specific product preferences?
-
-
-
-- How can customer demographics inform targeted marketing or product strategies?
-
 - Which types of accounts are most likely to expand?
+
+Customers from 40-60 age group, as they form the majority of the customer base are most likely to expand. Customer from Australia, the United States, Canada, and the UK, or customers with bachelor's degrees,who owna  house, married customers with no or a few children, are most likely to expand.
 
 - Which accounts are most likely to churn?
 
-- How does customer demographics impact sales?
+Customers who fall into the low-value category (CLV < 500 days), have low yearly income (<$63328) are most likely to churn as they might be more sensitive to price changes. Young adults (under 40 years) often have lower brand loyalty so may switch between brands more frequently. Customers who already posses more than 3 cars, who do not own a house, who are from Germany or France, who have high or partial high school degree, who have 2 or more children staying at home may also churn.
 
 - Find the top 10  customers by Average Order Value for 2016?
 
@@ -534,6 +530,12 @@ As can be seen from the segments, we don't have all the 7 segments of customers 
 
  ![bottom 10 pdt by sales](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/99bb74d6-1333-47c9-9eb8-1b27b1ff231d)
    
+- What are the top 10 most profitable and least profitable products for 2016?
+
+ ![top 10 pdts](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/d69e2138-5894-42c9-97ac-50ea94e2c23c)
+
+ ![least 10 pdt](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/a02f5c41-043e-4750-a389-de269b4920f7)
+
 - What is the quantity of products sold by product category, subcategory, productline and color?
 
  ![5 1](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/deeed3ba-cb7f-4677-8458-80fc74d8fd3f)
@@ -542,7 +544,7 @@ As can be seen from the segments, we don't have all the 7 segments of customers 
 
  ![5 3](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/ba1b5d1b-860f-4c7e-944d-4b67cb212a5a)
 
- ![5 4](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/946261eb-1c8d-46c4-a05b-939574b240c0) 
+ ![5 4](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/5a9709a3-9c8f-415c-b101-b08222aa442b)
 
 ### 6. **Territory and Regional Analysis:**
 
@@ -560,71 +562,73 @@ The United States and Australia are already producing high revenue. However, Can
 
 ## Summary:
 
-From Sales Trend analysis:
+1. **2016** shows significantly higher sales revenue, higher number of orders placed, quantity ordered as well as number of customers compared to 2014 and 2015. **June** consistently experiences a significant spike in sales, possibly due to summer season promotions or events. After June, sales decline in July and remain relatively flat until year-end. **November and December** show increased revenue, likely due to holiday shopping and year-end sales.
 
-**2016** shows significantly higher sales revenue, higher number of orders placed, quantity ordered as well as number of customers compared to 2014 and 2015. **June** consistently experiences a significant spike in sales, possibly due to summer season promotions or events. After June, sales decline in July and remain relatively flat until year-end. **November and December** show increased revenue, likely due to holiday shopping and year-end sales.
+2. From Sales Budget Analysis, we found out that 7 out of 13 products have lower actual sales revenue in 2016 than was projected. A further exploration revealed lack of sales in various months and difference of pricings in various countries may have been potential reasons for their large variance.
+   
+3. From analyzing various Customer demographics and product preference, we found out that -
 
+* **Age Distribution**: Majority of the customers fall within the 40 to 60 years age range, with a gradual decrease in numbers after 60.
+* **Car Ownership**: Approximately 31% of customers own 2 cars, followed by 1 car (25%), no cars (24%), 3 cars (10%), and 4 cars (8%).
+* **Product Preferences**: 51% of customers purchase bike accessories, 35% buy bikes, and 13% purchase clothing.
+* **Family Size**: 30% of customers have no children, 20% have 2 children, and 19% have 1 child.
+* **Childless Customers**: About 58% of the total customer base does not have any children at home.
+* **Color Preferences**: Excluding products with unknown color details, black products are most popular, followed by red and yellow. White products are least favored.
+* **Commute Distance**: 37% of customers have a commute distance of 0-1 miles, while 18% travel 5-10 miles, 15% travel 1-2 miles, 14% travel 2-5 miles, and 14% travel over 10 miles.
+* **Geographic Distribution**: Most customers are from Australia, the United States, Canada, and the UK. A smaller number are from Germany and France.
+* **Customer Lifetime Value (CLV)**: 62% of customers fall into the low-value category (CLV < 500 days), followed by medium-value (36%) and high-value (1.85%).
+* **Education Levels**: 33% of total customers have a bachelor's degree, while only 6% have a partial high school degree.
+* **Gender Distribution**: No significant difference based on gender. Female customers slightly outnumber male customers (50.19% vs. 49.81%).
+* **Income Categories**: 53% of customers have low income (annual income < $63,328), 37% have medium income, and 8% have high income.
+* **Marital Status**: 55% of customers are married, while 44% are single.
+* **Occupation**: Most customers are professionals.
+* **Product Preferences (Specific)**: Majority of customers purchase sports products, particularly sports tires and tubes, road bikes, and mountain bikes.
 
-From Customer Segmentation:
+4. From RFM Analysis, we found that majority of the customers are promising new customers who have somewhat recently purchased, with low frequency and monetary value. These customers have potential for repeating purchase, increase in frequency and spending amount with more engagement with the company. Some other segments include recent customers, at risk of churning and customers who need attention before they churn.
 
-1. **Age Distribution**:
-   - Majority of the customers fall within the 40 to 60 years age range, with a gradual decrease in numbers after 60.
+5. From analyzing 406 products, we found that Components category has the highest number of products compared to bikes, accessories, clothing etc. Road frames, Road bikes and Mountain frames are the top product subcategory. Most of the products are in Black color and least in Grey and white.
 
-2. **Car Ownership**:
-   - Approximately 31% of customers own 2 cars, followed by 1 car (25%), no cars (24%), 3 cars (10%), and 4 cars (8%).
-
-3. **Product Preferences**:
-   - 51% of customers purchase bike accessories, 35% buy bikes, and 13% purchase clothing.
-
-4. **Family Size**:
-   - 30% of customers have no children, 20% have 2 children, and 19% have 1 child.
-
-5. **Childless Customers**:
-   - About 58% of the total customer base does not have any children at home.
-
-6. **Color Preferences**:
-   - Excluding products with unknown color details, black products are most popular, followed by red and yellow. White products are least favored.
-
-7. **Commute Distance**:
-   - 37% of customers have a commute distance of 0-1 miles, while 18% travel 5-10 miles, 15% travel 1-2 miles, 14% travel 2-5 miles, and 14% travel over 10 miles.
-
-8. **Geographic Distribution**:
-   - Most customers are from Australia, the United States, Canada, and the UK. A smaller number are from Germany and France.
-
-9. **Customer Lifetime Value (CLV)**:
-   - Segmented into three categories (low, medium, and high).
-   - 62% of customers fall into the low-value category (CLV < 500 days), followed by medium-value (36%) and high-value (1.85%).
-
-10. **Education Levels**:
-    - 33% of total customers have a bachelor's degree, while only 6% have a partial high school degree.
-
-11. **Gender Distribution**:
-    - No significant difference based on gender. Female customers slightly outnumber male customers (50.19% vs. 49.81%).
-
-12. **Income Categories**:
-    - 53% of customers have low income (annual income < $63,328), 37% have medium income, and 8% have high income.
-
-13. **Marital Status**:
-    - 55% of customers are married, while 44% are single.
-
-14. **Occupation**:
-    - Most customers are professionals.
-
-15. **Product Preferences (Specific)**:
-    - Majority of customers purchase sports products, particularly sports tires and tubes, road bikes, and mountain bikes.
+6. The United States and Australia are in the front in terms of both Revenue generated and quantity ordered. Germany, France and Canada have lower revenue.
 
 ## Recommendations:
 
+1. **Targeted Marketing**: Focus marketing efforts on the 40-60 age group, as they form the majority of the customer base. Tailor marketing messages to address the needs and preferences of customers in this age range.
+
+2. **Product Bundling**: Since 31% of customers own 2 cars, consider bundling car-related products or services to encourage cross-selling. For example, offer discounts on accessories when purchasing multiple car products.
+
+3. **Promote Bike Accessories**: Given that 51% of customers buy bike accessories, create targeted promotions for bike-related products. Highlight the benefits of accessories such as safety, convenience, and style.
+
+4. **Child-Friendly Products**: Since 58% of customers have no children at home, consider offering family-friendly products. Promote child seats, family bikes, or other kid-friendly accessories.
+
+5. **Color-Specific Campaigns**: Leverage color preferences: black, red, and yellow are popular. Run campaigns featuring products in these colors to attract customer attention.
+
+6. **Localized Marketing**: Concentrate efforts in countries with the highest customer concentration (Australia, the United States, Canada, and the UK). Tailor marketing messages to each country's cultural nuances.
+
+7. **Customer Retention Strategies**: Since 62% of customers fall into the low-value category (CLV < 500 days), focus on retaining them. Implement loyalty programs, personalized offers, and excellent customer service.
+
+8. **Education-Based Marketing**: Target customers with bachelor's degrees (33%) with educational content. Position products as intelligent choices backed by knowledge.
+
+9. **Income-Sensitive Pricing**: Adjust pricing strategies based on income levels. Offer budget-friendly options for low-income customers and premium products for high-income customers.
+
+10. **Marital Status Considerations**: Married customers (55%) may have different needs than single customers (44%). Customize marketing messages accordingly.
+
+11. **Product Recommendations**: Promote sports products, especially sports tires and tubes, road bikes, and mountain bikes. Highlight their features, durability, and performance.
+
 ## Conclusions:
+
+In this project I have explored various aspect of AdventureWorks Retail Company's more than 58,000 rows of Daily Sales Data from 2014 to 2016 spread across 7 countries. Using Excel, I cleaned the data. Using Alteryx's powerful tools I transformed the datasets into a more comprehensible data that I used for analysis and visualization. I performed Exploratory data analysis where I explored the structure of the data, dig deeper when necessary, analysed the customer demographic details to find their purchase behaviour. Also I performed RFM Ananlysis where I segmented the customers based on 3 metrics - Recency, Frequency and Monetary and provided recommendations how to approach these segments individually. Finally, I analyzed the top performing products and least performing products based on revenue, quantity and profit. I used Power BI to visualize the data.
 
 ## Limitations of the project:
 
 * Since the Budget data only contains monthly sales budget for a few products, a detailed Budget Analysis was not possible.
 * Due to joining of multiple datasets, we lost many data points, that could have enriched our analysis.
-* A detailed Customer Segmentation has not been performed using Cluster Analysis or other Machine Learning Techniques due to time constraint. 
-
+* A detailed Customer Segmentation has not been performed using Cluster Analysis or other Machine Learning Techniques due to time constraint.
+* The data is outdated.
 
 ## Future Ideas:
+
+* Collecting more information about other sales aspects, such as salesperson, sales location etc to perform more deeper analysis.
+* A more advanced Segmentation Process can be performed.
 
 ## References:
 
