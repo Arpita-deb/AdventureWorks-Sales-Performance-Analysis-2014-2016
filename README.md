@@ -374,8 +374,11 @@ Apart from them, I have also segmented customers based on Product SubCategory,	C
 
 
 - How can customer demographics inform targeted marketing or product strategies?
+
 - Which types of accounts are most likely to expand?
+
 - Which accounts are most likely to churn?
+
 - How does customer demographics impact sales?
 
 - Find the top 10  customers by Average Order Value for 2016?
@@ -555,9 +558,60 @@ As can be seen from the segments, we don't have all the 7 segments of customers 
 
 The United States and Australia are already producing high revenue. However, Canada and the UK also showing growth potential in terms of quantity of product purchase.
 
-## Interpretation of Results:
+## Summary:
 
-## Reporting: 
+From Sales Trend analysis:
+
+**2016** shows significantly higher sales revenue, higher number of orders placed, quantity ordered as well as number of customers compared to 2014 and 2015. **June** consistently experiences a significant spike in sales, possibly due to summer season promotions or events. After June, sales decline in July and remain relatively flat until year-end. **November and December** show increased revenue, likely due to holiday shopping and year-end sales.
+
+
+From Customer Segmentation:
+
+1. **Age Distribution**:
+   - Majority of the customers fall within the 40 to 60 years age range, with a gradual decrease in numbers after 60.
+
+2. **Car Ownership**:
+   - Approximately 31% of customers own 2 cars, followed by 1 car (25%), no cars (24%), 3 cars (10%), and 4 cars (8%).
+
+3. **Product Preferences**:
+   - 51% of customers purchase bike accessories, 35% buy bikes, and 13% purchase clothing.
+
+4. **Family Size**:
+   - 30% of customers have no children, 20% have 2 children, and 19% have 1 child.
+
+5. **Childless Customers**:
+   - About 58% of the total customer base does not have any children at home.
+
+6. **Color Preferences**:
+   - Excluding products with unknown color details, black products are most popular, followed by red and yellow. White products are least favored.
+
+7. **Commute Distance**:
+   - 37% of customers have a commute distance of 0-1 miles, while 18% travel 5-10 miles, 15% travel 1-2 miles, 14% travel 2-5 miles, and 14% travel over 10 miles.
+
+8. **Geographic Distribution**:
+   - Most customers are from Australia, the United States, Canada, and the UK. A smaller number are from Germany and France.
+
+9. **Customer Lifetime Value (CLV)**:
+   - Segmented into three categories (low, medium, and high).
+   - 62% of customers fall into the low-value category (CLV < 500 days), followed by medium-value (36%) and high-value (1.85%).
+
+10. **Education Levels**:
+    - 33% of total customers have a bachelor's degree, while only 6% have a partial high school degree.
+
+11. **Gender Distribution**:
+    - No significant difference based on gender. Female customers slightly outnumber male customers (50.19% vs. 49.81%).
+
+12. **Income Categories**:
+    - 53% of customers have low income (annual income < $63,328), 37% have medium income, and 8% have high income.
+
+13. **Marital Status**:
+    - 55% of customers are married, while 44% are single.
+
+14. **Occupation**:
+    - Most customers are professionals.
+
+15. **Product Preferences (Specific)**:
+    - Majority of customers purchase sports products, particularly sports tires and tubes, road bikes, and mountain bikes.
 
 ## Recommendations:
 
