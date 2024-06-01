@@ -241,6 +241,10 @@ After June sales drop down in July and sees little or no increase in revenue unt
 
  ![1 5](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/da7520c6-0ee4-4dc6-b312-9944d95b77f6)
    
+- **What is the monthly number of customers per year?**
+
+![monthly num of customers](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/8a31d3cf-36c1-4df9-b5d1-a6d96cdf746e)
+
 - **What is the Average Order Value per order, Average Order Frequency and Average Order Size?**
 
 The Average Order Value per order is the average amount a customer spends per order.
@@ -287,98 +291,69 @@ Apart from them, I have also segmented customers based on Product SubCategory,	C
   * Agegroup
   
   ![age group](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/9ae06372-bd86-47d6-88f5-49ec264d3044)
-  ![age](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/29b68e88-a1d9-4a5d-8a69-658dce110025)
+  ![age](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/fa502386-ada4-49e6-9a9c-72ac1e51fc3f)
 
   * Gender
 
   ![gender](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/448148b4-de10-49da-821c-11e18441c05b)
-  ![gender](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/ddfebe56-cd4d-4f0b-bc09-2a75a38c16c0)
+  ![gender](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/5e7bb18c-c9a0-4218-aeba-fbb540c3d97b)
 
   * Income Category
     
   ![income cat](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/d39387a4-b723-4d36-a93a-22c1c7af6abb)
-  ![incomecate](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/bdb70f9a-b7aa-4ea1-90e4-cf2808e46e4d)
+  ![income](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/4f9a9231-fe02-407f-adea-198896c2d797)
   
   * Marital Status
  
   ![marital status](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/59f573de-8ce5-40ca-bf0c-594b861797a7)
-  ![marital](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/2a600acb-deb2-45ed-99ce-518be696faaf)
+  ![marital](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/71a61167-8799-41be-b7be-cedfeec5a5ab)
 
   * Total Children
   
   ![totchildren](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/8f7567b2-be89-4265-8952-26d21c3e5d14)
-  ![child](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/c1219e20-7d5a-4f56-9e4f-cbd350b3312c)
- 
+  ![child](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/40592db5-d7cf-41a3-b1ac-d5dceb8a59a0)
+
   * Number of Children At Home
   
    ![childrenathome](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/0db0a75a-a77c-432d-91e3-68121527bf18)
-   ![childrenathome](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/fab5acf0-6220-4cc8-8289-79aae8c22d03)
+   ![childhome](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/6fadee2a-ed58-4740-b8a3-57192c848ba4)
 
   * Education
     
   ![edu](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/db05458d-8076-4ef4-899a-a6efe435c07a)
-  ![edu](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/bc058c0c-6bda-4756-b11d-1adff188acc0)
+  ![edu](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/307bf92f-fbeb-4143-a16d-01fda7e73e21)
 
-  * Occupation
+   * Occupation
 
   ![occu](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/02570fde-eeea-4b04-9475-158974078e7c)
-  ![occu](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/386cf616-5bbd-4cd2-a495-47cc542cb6d0)
-
+  ![occu](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/e33494bb-6319-4307-b40e-38bb4372b2b1)
   * House Owner Flag (whether they own a house or not)
   
   ![houseowner](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b59de5a2-20d5-457c-bb1c-8bd28f1affb5)
+  ![house](https://github.com/Arpita-deb/netflix-movies-and-tv-shows/assets/139372731/199aeb4a-7f77-4ea5-b9a4-93785b68717f) 
 
   * Number of Cars Owned
 
   ![carsowned](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b4309459-4ec1-411f-8151-80a30dc70b1f)
-  ![cars](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/3962ccb5-95ce-4f09-8839-a115cea711c1)
+  ![cars](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/5ddab7e9-3c24-4fa9-9e9f-439836bd3e0b)
 
   * Country
   
   ![country](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/5c02b698-e4a6-4022-a360-94eabb4c4544)
-  ![country](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/68024727-adbd-4cad-b5d5-97abd90ac19d)
-  
+  ![country](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/bba7a467-609a-4aee-af47-0e7e4149eacb)
   * Commute Distance
 
   ![commute](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b3e03fc4-c5df-42d7-b7a3-2c44a08ee3b1)
-  ![commutedist](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/38ca7c07-6859-4b90-b947-554ba1bd0574)
+  ![commute](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/cfa84a77-f558-4487-b2af-359743624a9b)
 
   * Customer Lifetime Duration (days)
     
   ![customertype](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b59f9703-63ca-4564-8f0c-de76fce01c29)
-  ![customertype](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/1d62d9ba-b3b6-4dc3-89ce-c0e20b9d75d3)
-   
-  * Product Category
-    
-  ![category](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/7cf4ccab-46f2-415f-96bf-f558ecd05819)
-  ![cat](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/b6a3d4b4-82e2-4b86-9173-9d5cf5cb40d1)
-
-   * SubCategory
-
-  ![subcategory](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/5b629ed5-8e23-40ed-87d8-b2706eba06c5)
-  ![subcat](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/10a20cb7-138d-4efe-a34c-83b95fc6d63e)
-
-   * ProductLine
-
-  ![pdtline](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/f1a57a53-10c6-43b3-bf33-3ab65e69252d)
-  ![pdtline](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/1bfc8dd6-433c-4d78-a746-ea1433e7e2fa)
-
-  * ModelName
-
-  ![model](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/f5b0075c-2f9e-45d5-90e0-68d65a4b4315)
-
-  * ProductName
-  
-  ![pdt](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/51a068dc-88b7-4615-8efd-52412e4a30d2)
-
-  * Color
-
-  ![color](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/8e5a8c32-02a2-4ad4-9439-278be285fda5)
-  ![color](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/8359e3ab-49bf-4e5a-8d97-e4265f2c9ba9)
+  ![cld](https://github.com/Arpita-deb/netflix-movies-and-tv-shows/assets/139372731/4821ec9f-2906-498d-adb8-881bef60f675)
 
 - **Which types of accounts are most likely to expand?**
 
-Customers from 40-60 age group, as they form the majority of the customer base are most likely to expand. Customer from Australia, the United States, Canada, and the UK, or customers with bachelor's degrees,who owna  house, married customers with no or a few children, are most likely to expand.
+Customers from 40-60 age group, as they form the majority of the customer base are most likely to expand. Customer from Australia, the United States, Canada, and the UK, or customers with bachelor's degrees, who owns a house, married customers with no or a few children, are most likely to expand.
 
 - **Which accounts are most likely to churn?**
 
