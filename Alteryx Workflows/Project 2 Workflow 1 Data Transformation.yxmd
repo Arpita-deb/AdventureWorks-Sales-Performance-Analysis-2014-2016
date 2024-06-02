@@ -1,0 +1,1723 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="56" y="54" width="347" height="132" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Project 2: Sales Budget Analysis
+Work flow 1: Data Transformation
+Created by: Arpita Deb
+Dated: 25-05-2024
+Methodologies used: Filtering, Joining, Calculating new fields, Summarizing etc.
+Result: 4 new tables are created with more comprehensive data attributes.</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="White" />
+          <FillColor r="255" g="81" b="81" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="56" y="258" width="888" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>1. Calculating Age of the customers for 2016 by joining Sales Data with Customer Data. And also creating IncomeCategory column.</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="200" g="200" b="200" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="56" y="774" width="1284" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>2. Creating a new table Customer_Order_details with Customer Lifetime Duration column and CustomerType by categorizing them into 3 distinct groups - High, Medium and Low Value customers.</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="200" g="200" b="200" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="55" y="1350" width="624" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>3. Creating 5 new columns - Profit, TaxRate, ShippingDuration, TotalTransactionCost, ProfitMargin in the sales sheet.</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="200" g="200" b="200" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="56" y="1686" width="624" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>4. Creating 3 new columns - ProfitMargin%, Markup% and ManufacturingEfficiency in the Product sheet.</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="200" g="200" b="200" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="52" y="341" width="1110" height="386" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Customer Demographic Data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Customer Demographic Data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="77" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Input Sales Data</AnnotationText>
+              <DefaultAnnotationText>Adventure_Works_Database_Cleaned(2014-2016).xlsx
+Query=`Sales$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ProductKey" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="V_String" />
+                <Field name="OrderDate" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Date" />
+                <Field name="ShipDate" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Date" />
+                <Field name="CustomerKey" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="V_String" />
+                <Field name="SalesTerritoryKey" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="V_String" />
+                <Field name="SalesOrderNumber" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="V_String" />
+                <Field name="SalesOrderLineNumber" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+                <Field name="OrderQuantity" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+                <Field name="UnitPrice" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+                <Field name="TotalProductCost" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+                <Field name="SalesAmount" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+                <Field name="TaxAmt" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="246" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ProductKey" selected="False" />
+                <SelectField field="ShipDate" selected="False" />
+                <SelectField field="SalesTerritoryKey" selected="False" />
+                <SelectField field="SalesOrderNumber" selected="False" />
+                <SelectField field="SalesOrderLineNumber" selected="False" />
+                <SelectField field="OrderQuantity" selected="False" />
+                <SelectField field="UnitPrice" selected="False" />
+                <SelectField field="TotalProductCost" selected="False" />
+                <SelectField field="SalesAmount" selected="False" />
+                <SelectField field="TaxAmt" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Select Tool</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="378" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FirstName" selected="False" />
+                <SelectField field="LastName" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Select Tool</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="510" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="CustomerKey" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="CustomerKey" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_CustomerKey" selected="True" input="Left_" />
+                    <SelectField field="Right_OrderDate" selected="True" input="Right_" />
+                    <SelectField field="Left_CustomerName" selected="True" input="Left_" />
+                    <SelectField field="Left_BirthDate" selected="True" input="Left_" />
+                    <SelectField field="Left_MaritalStatus" selected="True" input="Left_" />
+                    <SelectField field="Left_Gender" selected="True" input="Left_" />
+                    <SelectField field="Left_YearlyIncome" selected="True" input="Left_" />
+                    <SelectField field="Left_TotalChildren" selected="True" input="Left_" />
+                    <SelectField field="Left_NumberChildrenAtHome" selected="True" input="Left_" />
+                    <SelectField field="Left_Education" selected="True" input="Left_" />
+                    <SelectField field="Left_Occupation" selected="True" input="Left_" />
+                    <SelectField field="Left_HouseOwnerFlag" selected="True" input="Left_" />
+                    <SelectField field="Left_NumberCarsOwned" selected="True" input="Left_" />
+                    <SelectField field="Left_AddressLine" selected="True" input="Left_" />
+                    <SelectField field="Left_DateFirstPurchase" selected="True" input="Left_" />
+                    <SelectField field="Left_CommuteDistance" selected="True" input="Left_" />
+                    <SelectField field="Right_CustomerKey" selected="False" rename="Right_CustomerKey" input="Right_" />
+                    <SelectField field="Right_SalesOrderNumber" selected="True" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Join Tool</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="630" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeYear([OrderDate])- DateTimeYear([BirthDate])" field="Age" size="8" type="Int64" enabled="true" />
+                <FormulaField expression="IF [YearlyIncome]&lt; 63328 THEN 'Low'&#xA;ELSEIF [YearlyIncome] &gt;= 63328 AND [YearlyIncome] &lt;116656 THEN 'Medium' &#xA;ELSE 'High' &#xA;ENDIF" field="IncomeCategory" size="64" type="String" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Formula Tool</AnnotationText>
+              <DefaultAnnotationText>Age = DateTimeYear([OrderDate])- DateTimeYear([BirthDate])
+IncomeCategory = IF [...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1050" y="522" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Customer_Demographic_Data.xlsx|||Sheet1</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText><![CDATA[Output Tool
+]]></AnnotationText>
+              <DefaultAnnotationText>Customer_Demographic_Data.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="92">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="246" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="CustomerKey" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Unique Tool</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="93">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="750" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="CustomerKey" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Unique Tool</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="94">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="906" y="522" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="CustomerKey" selected="True" />
+                <SelectField field="OrderDate" selected="False" />
+                <SelectField field="CustomerName" selected="True" />
+                <SelectField field="BirthDate" selected="True" />
+                <SelectField field="Gender" selected="True" />
+                <SelectField field="Age" selected="True" />
+                <SelectField field="YearlyIncome" selected="True" />
+                <SelectField field="IncomeCategory" selected="True" />
+                <SelectField field="MaritalStatus" selected="True" />
+                <SelectField field="TotalChildren" selected="True" />
+                <SelectField field="NumberChildrenAtHome" selected="True" />
+                <SelectField field="Education" selected="True" />
+                <SelectField field="Occupation" selected="True" />
+                <SelectField field="HouseOwnerFlag" selected="True" />
+                <SelectField field="NumberCarsOwned" selected="True" />
+                <SelectField field="AddressLine" selected="True" />
+                <SelectField field="DateFirstPurchase" selected="True" />
+                <SelectField field="CommuteDistance" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Select Tool</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="117">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="210" y="486" width="124" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Removing duplicates by selecting Unique CustomerKey</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="118">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="366" y="486" width="100" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Selecting the required fields</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="119">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="462" y="642" width="124" height="60" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Joining the Customers and Sales datasets by CustomerKey field</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="120">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="222" y="654" width="119" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Selecting OrderDate and CustomerKey columns</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="121">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="606" y="642" width="124" height="60" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Creating Age and IncomeCategory Columns</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="122">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="750" y="642" width="100" height="60" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Removing duplicates by selecting Unique CustomerKey</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="123">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="882" y="654" width="100" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Selecting the required fields</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="124">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1002" y="630" width="136" height="60" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Saving the output as Customer_Demographic_Data</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="77" y="401" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Input Customers Data</AnnotationText>
+              <DefaultAnnotationText>Adventure_Works_Database_Cleaned(2014-2016).xlsx
+Query=`Customers$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CustomerKey" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="FirstName" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="LastName" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="CustomerName" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="BirthDate" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="Date" />
+                <Field name="MaritalStatus" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="Gender" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="YearlyIncome" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="Double" />
+                <Field name="TotalChildren" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="Double" />
+                <Field name="NumberChildrenAtHome" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="Double" />
+                <Field name="Education" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="Occupation" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="HouseOwnerFlag" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="NumberCarsOwned" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="Double" />
+                <Field name="AddressLine" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="DateFirstPurchase" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="Date" />
+                <Field name="CommuteDistance" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="53" y="1409" width="606" height="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Sales Data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Sales Data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="78" y="1458" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText><![CDATA[Input Sales Data ]]></AnnotationText>
+              <DefaultAnnotationText>Adventure_Works_Database_Cleaned(2014-2016).xlsx
+Query=`Sales$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ProductKey" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="V_String" />
+                <Field name="OrderDate" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Date" />
+                <Field name="ShipDate" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Date" />
+                <Field name="CustomerKey" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="V_String" />
+                <Field name="SalesTerritoryKey" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="V_String" />
+                <Field name="SalesOrderNumber" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="V_String" />
+                <Field name="SalesOrderLineNumber" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+                <Field name="OrderQuantity" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+                <Field name="UnitPrice" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+                <Field name="TotalProductCost" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+                <Field name="SalesAmount" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+                <Field name="TaxAmt" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="390" y="1458" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[SalesAmount] - [TotalProductCost]" field="Profit" size="8" type="Double" enabled="true" />
+                <FormulaField expression="DateTimeDiff([ShipDate],[OrderDate],'days')" field="ShippingDuration" size="8" type="Int64" enabled="true" />
+                <FormulaField expression="[TaxAmt]/[SalesAmount]" field="TaxRate" size="8" type="Double" enabled="true" />
+                <FormulaField expression="[Profit]/[SalesAmount]" field="ProfitMargin" size="8" type="Double" enabled="true" />
+                <FormulaField expression="[SalesAmount]+ [TaxAmt]" field="TotalTransactionAmount" size="8" type="Double" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Formula Tool</AnnotationText>
+              <DefaultAnnotationText>Profit = [SalesAmount] - [TotalProductCost]
+ShippingDuration = DateTimeDiff([Shi...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="90">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="546" y="1458" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Sales_Data.xlsx|||Sheet1</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Output Tool</AnnotationText>
+              <DefaultAnnotationText>Sales_Data.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="135">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="378" y="1554" width="100" height="36" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Created new columns</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="136">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="534" y="1554" width="100" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Saved the data as Sales_Data</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="138">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="234" y="1458" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>SalesKey</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>RecordID Tool</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="139">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="222" y="1542" width="100" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[Adding a Primary Key for Sales records ]]></Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="52" y="1757" width="626" height="230" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Product Details Data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Product Details Data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="77" y="1806" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Product$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Inuput Product Data</AnnotationText>
+              <DefaultAnnotationText>Adventure_Works_Database_Cleaned(2014-2016).xlsx
+Query=`Product$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ProductKey" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Product$`" type="V_String" />
+                <Field name="ProductName" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Product$`" type="V_String" />
+                <Field name="SubCategory" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Product$`" type="V_String" />
+                <Field name="Category" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Product$`" type="V_String" />
+                <Field name="StandardCost" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Product$`" type="Double" />
+                <Field name="Color" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Product$`" type="V_String" />
+                <Field name="ListPrice" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Product$`" type="Double" />
+                <Field name="DaysToManufacture" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Product$`" type="Double" />
+                <Field name="ProductLine" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Product$`" type="V_String" />
+                <Field name="ModelName" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Product$`" type="V_String" />
+                <Field name="Photo" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Product$`" type="V_String" />
+                <Field name="ProductDescription" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Product$`" type="V_String" />
+                <Field name="StartDate" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Product$`" type="Date" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="366" y="1818" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="([ListPrice]-[StandardCost])/[ListPrice] *100" field="ProfitMargin%" size="8" type="Double" enabled="true" />
+                <FormulaField expression="([ListPrice]-[StandardCost])/[StandardCost] * 100" field="MarkUp%" size="8" type="Double" enabled="true" />
+                <FormulaField expression="[StandardCost]/[DaysToManufacture]" field="ManufacturingEfficiency" size="8" type="Double" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Formula Tool</AnnotationText>
+              <DefaultAnnotationText>ProfitMargin% = ([ListPrice]-[StandardCost])/[ListPrice] *100
+MarkUp% = ([ListPr...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="210" y="1806" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[ListPrice] = 0 or [StandardCost]=0</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Filter Tool</AnnotationText>
+              <DefaultAnnotationText>[ListPrice] = 0 or [StandardCost]=0</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="198" y="1914" width="132" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Filtering for values with 0 StandardCost or 0 ListPrice</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="534" y="1914" width="120" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Saving the data as Product_Details_Data</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="354" y="1914" width="100" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[Creating 3 new columns ]]></Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="91">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="570" y="1818" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Products_Details_Data.xlsx|||Sheet1</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Output Tool</AnnotationText>
+              <DefaultAnnotationText>Products_Details_Data.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="109">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="53" y="845" width="1445" height="446" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Customer Order Data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Customer Order Data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="96">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="618" y="1014" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeDiff([OrderDate],[DateFirstPurchase],'day')" field="CustomerLifetimeDuration" size="8" type="Int64" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Formula Tool</AnnotationText>
+              <DefaultAnnotationText><![CDATA[CustomerLifetimeDuration = DateTimeDiff([OrderDate],[DateFirstPurchase],'day')
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="97">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="486" y="1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[OrderDate] = [DateFirstPurchase]</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Filter Tool</AnnotationText>
+              <DefaultAnnotationText>[OrderDate] = [DateFirstPurchase]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="98">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1242" y="990" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [CustomerLifetimeDuration] &lt; 500 THEN 'Low Value'&#xA;ELSEIF [CustomerLifetimeDuration] &gt;= 500 AND [CustomerLifetimeDuration] &lt; 1000 THEN 'Medium Value' &#xA;ELSE 'High Value' &#xA;ENDIF&#xA;&#xA;" field="CustomerType" size="64" type="String" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Formula Tool</AnnotationText>
+              <DefaultAnnotationText>CustomerType = IF [CustomerLifetimeDuration] &lt; 500 THEN 'Low Value'
+ELSEIF [Cust...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="99">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="786" y="894" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="CustomerKey" action="GroupBy" rename="CustomerKey" />
+                <SummarizeField field="CustomerLifetimeDuration" action="Max" rename="MaxCustomerLifetimeDuration" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Summarize Tool</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="100">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="954" y="1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="CustomerKey" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="CustomerKey" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_CustomerKey" selected="True" input="Left_" />
+                    <SelectField field="Right_CustomerName" selected="False" input="Right_" />
+                    <SelectField field="Right_DateFirstPurchase" selected="True" input="Right_" />
+                    <SelectField field="Right_OrderDate" selected="True" rename="LastOrderDate" input="Right_" />
+                    <SelectField field="Left_Max_CustomerLifetimeDuration" selected="False" input="Left_" />
+                    <SelectField field="Right_CustomerKey" selected="False" rename="Right_CustomerKey" input="Right_" />
+                    <SelectField field="Right_CustomerLifetimeDuration" selected="False" input="Right_" />
+                    <SelectField field="Right_CommuteDistance" selected="False" input="Right_" />
+                    <SelectField field="Left_MaxCustomerLifetimeDuration" selected="True" rename="CustomerLifetimeDuration" input="Left_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Join Tool</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="101">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="1110" y="1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="CustomerKey" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Unique Tool</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="102">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="474" y="1110" width="132" height="60" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Removing the columns with same order date and first purchase date</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="103">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="78" y="906" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Input Customers Data</AnnotationText>
+              <DefaultAnnotationText>Adventure_Works_Database_Cleaned(2014-2016).xlsx
+Query=`Customers$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CustomerKey" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="FirstName" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="LastName" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="CustomerName" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="BirthDate" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="Date" />
+                <Field name="MaritalStatus" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="Gender" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="YearlyIncome" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="Double" />
+                <Field name="TotalChildren" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="Double" />
+                <Field name="NumberChildrenAtHome" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="Double" />
+                <Field name="Education" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="Occupation" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="HouseOwnerFlag" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="NumberCarsOwned" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="Double" />
+                <Field name="AddressLine" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+                <Field name="DateFirstPurchase" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="Date" />
+                <Field name="CommuteDistance" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Customers$`" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="104">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="78" y="1134" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Input Sales Data</AnnotationText>
+              <DefaultAnnotationText>Adventure_Works_Database_Cleaned(2014-2016).xlsx
+Query=`Sales$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ProductKey" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="V_String" />
+                <Field name="OrderDate" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Date" />
+                <Field name="ShipDate" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Date" />
+                <Field name="CustomerKey" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="V_String" />
+                <Field name="SalesTerritoryKey" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="V_String" />
+                <Field name="SalesOrderNumber" size="255" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="V_String" />
+                <Field name="SalesOrderLineNumber" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+                <Field name="OrderQuantity" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+                <Field name="UnitPrice" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+                <Field name="TotalProductCost" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+                <Field name="SalesAmount" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+                <Field name="TaxAmt" source="File: C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Data Sets\Budget Sales data - Copy\Adventure_Works_Database_Cleaned(2014-2016).xlsx|||`Sales$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="105">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="210" y="1134" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ProductKey" selected="False" />
+                <SelectField field="ShipDate" selected="False" />
+                <SelectField field="SalesTerritoryKey" selected="False" />
+                <SelectField field="SalesOrderNumber" selected="False" />
+                <SelectField field="SalesOrderLineNumber" selected="False" />
+                <SelectField field="OrderQuantity" selected="False" />
+                <SelectField field="UnitPrice" selected="False" />
+                <SelectField field="TotalProductCost" selected="False" />
+                <SelectField field="SalesAmount" selected="False" />
+                <SelectField field="TaxAmt" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Select Tool</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="106">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="221" y="906" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FirstName" selected="False" />
+                <SelectField field="LastName" selected="False" />
+                <SelectField field="CustomerName" selected="False" />
+                <SelectField field="BirthDate" selected="False" />
+                <SelectField field="MaritalStatus" selected="False" />
+                <SelectField field="Gender" selected="False" />
+                <SelectField field="YearlyIncome" selected="False" />
+                <SelectField field="TotalChildren" selected="False" />
+                <SelectField field="NumberChildrenAtHome" selected="False" />
+                <SelectField field="Education" selected="False" />
+                <SelectField field="Occupation" selected="False" />
+                <SelectField field="HouseOwnerFlag" selected="False" />
+                <SelectField field="NumberCarsOwned" selected="False" />
+                <SelectField field="AddressLine" selected="False" />
+                <SelectField field="CommuteDistance" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Select Tool</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="107">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="378" y="1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="CustomerKey" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="CustomerKey" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_CustomerKey" selected="True" input="Left_" />
+                    <SelectField field="Right_OrderDate" selected="True" input="Right_" />
+                    <SelectField field="Left_CustomerName" selected="True" input="Left_" />
+                    <SelectField field="Left_BirthDate" selected="True" input="Left_" />
+                    <SelectField field="Left_MaritalStatus" selected="True" input="Left_" />
+                    <SelectField field="Left_Gender" selected="True" input="Left_" />
+                    <SelectField field="Left_YearlyIncome" selected="True" input="Left_" />
+                    <SelectField field="Left_TotalChildren" selected="True" input="Left_" />
+                    <SelectField field="Left_NumberChildrenAtHome" selected="True" input="Left_" />
+                    <SelectField field="Left_Education" selected="True" input="Left_" />
+                    <SelectField field="Left_Occupation" selected="True" input="Left_" />
+                    <SelectField field="Left_HouseOwnerFlag" selected="True" input="Left_" />
+                    <SelectField field="Left_NumberCarsOwned" selected="True" input="Left_" />
+                    <SelectField field="Left_AddressLine" selected="True" input="Left_" />
+                    <SelectField field="Left_DateFirstPurchase" selected="True" input="Left_" />
+                    <SelectField field="Left_CommuteDistance" selected="True" input="Left_" />
+                    <SelectField field="Right_CustomerKey" selected="False" rename="Right_CustomerKey" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Join Tool</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="108">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1398" y="942" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Users\Dell\Desktop\Unified Mentor Project Details\Project 2 Budget Sales Analytics\Customer_Order_Details_Data.xlsx|||Sheet1</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Output Tool</AnnotationText>
+              <DefaultAnnotationText>Customer_Order_Details_Data.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="126">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="186" y="990" width="156" height="36" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Selecting CustomerKey and DateFirstPurchase fields</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="127">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="198" y="1218" width="156" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Selecting CustomerKey and OrderDate fields</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="128">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="354" y="1110" width="100" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Joining the tables on CustomerKey</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="129">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="618" y="1110" width="180" height="60" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Calculating CustomerLifetimeDuration = OrderDate - DateFirstPurchase</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="130">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="774" y="978" width="100" height="36" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Choosing only the Maximum CLD</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="131">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="882" y="1110" width="192" height="60" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Joining the tables on CustomerKey to add the new column MaxCustomerLifetimeDuration</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="132">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1086" y="1110" width="84" height="60" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Removing the duplicate entries</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="133">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1218" y="1110" width="96" height="60" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Creating CustomerType column</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="134">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1350" y="1110" width="108" height="60" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Saving the output as Customer_Order_Data</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="70" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="70" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Join" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Unique" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="Unique" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="138" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="138" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="False" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="100" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Output" />
+      <Destination ToolID="100" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="False" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="98" Connection="Output" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Join" />
+      <Destination ToolID="101" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="Unique" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="103" Connection="Output" />
+      <Destination ToolID="106" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Output" />
+      <Destination ToolID="105" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="105" Connection="Output" />
+      <Destination ToolID="107" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="106" Connection="Output" />
+      <Destination ToolID="107" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="107" Connection="Join" />
+      <Destination ToolID="97" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Project 2 Workflow 1 Data Transformation</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="db38eb8d-25b7-4130-bcbc-635ca269fa3a" />
+      <Telemetry>
+        <PreviousWorkflowId value="3fdbdb28-6624-437a-8fb5-46861596250a" />
+        <OriginWorkflowId value="3fdbdb28-6624-437a-8fb5-46861596250a" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
