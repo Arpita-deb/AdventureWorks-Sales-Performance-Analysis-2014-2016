@@ -615,6 +615,14 @@ The United States and Australia are already producing high revenue. However, Can
 
 * From analyzing 406 products, we found that Components category has the highest number of products compared to bikes, accessories, clothing etc. Road frames, Road bikes and Mountain frames are the top product subcategory. Most of the products are in Black color and least in Grey and white.
 
+## Power BI Dashboard:
+
+![Sales Dashboard](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/9aaf3ddf-7575-45b1-ae85-176d7776be9f)
+
+![Sales Budget Analysis](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/09ad195d-f51b-4341-8887-7bb158f60579)
+
+![Customer Segmentation Dashboard](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/d000f5f3-671c-4e2c-b777-c36db23acb39)
+
 ## Recommendations:
 
 1. **Targeted Marketing**: Focus marketing efforts on the 40-60 age group, as they form the majority of the customer base. Tailor marketing messages to address the needs and preferences of customers in this age range.
