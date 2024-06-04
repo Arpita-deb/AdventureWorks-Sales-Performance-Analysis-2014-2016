@@ -1,4 +1,4 @@
-# Unified Mentor Project 2 Sales Budget Analysis
+# AdventureWorks Sales Budget Analysis
 This repository contains all the data and information about the projects that I completed as an intern in the Unified Mentor from 10-05-2024 to 10-06-2024.
 
 # About the Internship:
