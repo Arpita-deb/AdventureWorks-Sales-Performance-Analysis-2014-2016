@@ -1,12 +1,13 @@
 # AdventureWorks Sales Budget Analysis
-This repository contains all the data and information about the projects that I completed as an intern in the Unified Mentor from 10-05-2024 to 10-06-2024.
+## Unified Mentor Internship Project: Sales Budget Analytics
 
 # About the Internship:
+
 * Organization: Unified Mentor
 * Role: Data Analyst Intern
 * Timeline: 10-05-2024 to 10-06-2024
 * Number of Projects: 2
-* Project Names: Financial Analytics & Budget Sales Analysis
+* Project Names: Financial Analytics & Budget Sales Analytics
 
 # About the Project:
 
