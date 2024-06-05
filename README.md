@@ -1,5 +1,7 @@
 # AdventureWorks Sales Budget Analysis
-## Unified Mentor Internship Project: Sales Budget Analytics
+## Unified Mentor Internship Project 2: Sales Budget Analytics
+
+![AdventureWorks Sales Budget Analysis](https://github.com/Arpita-deb/Top_Indian_Firms_Market_Capitalization-Analysis_For_2018/assets/139372731/9f129258-bad5-464f-add0-9fd4ae20bf8f)
 
 # About the Internship:
 
@@ -27,6 +29,9 @@ In this project I'll perform the following tasks -
 5. Identify the top-selling products in terms of revenue and quantity.
 6. Communicate findings and recommendations to stakeholders in a clear and concise manner.
 7. Provide actionable insights and recommendations to senior management to support strategic decision-making.
+
+The Project Report is available here [AdventureWorks Sales Budget Analysis Report Presentation PDF](https://github.com/user-attachments/files/15572722/AdventureWorks.Sales.Budget.Analysis.Report.Presentation.pdf).
+
 
 ## Domain:
   - Retail & Sales
@@ -618,11 +623,11 @@ The United States and Australia are already producing high revenue. However, Can
 
 ## Power BI Dashboard:
 
-![Sales Dashboard](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/9aaf3ddf-7575-45b1-ae85-176d7776be9f)
+![1](https://github.com/Arpita-deb/netflix-movies-and-tv-shows/assets/139372731/a0612b55-f521-454d-bb6a-d9e86d211ae4)
 
-![Sales Budget Analysis](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/09ad195d-f51b-4341-8887-7bb158f60579)
+![2](https://github.com/Arpita-deb/netflix-movies-and-tv-shows/assets/139372731/cbd0b7b6-a77a-4c1a-8151-d8cb38ddb7d1)
 
-![Customer Segmentation Dashboard](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/d000f5f3-671c-4e2c-b777-c36db23acb39)
+![3](https://github.com/Arpita-deb/netflix-movies-and-tv-shows/assets/139372731/b6bcb393-fcdf-48e2-bc55-4d07312ab5e7)
 
 ## Recommendations:
 
