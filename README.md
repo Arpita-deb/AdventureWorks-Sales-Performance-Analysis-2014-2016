@@ -271,7 +271,7 @@ From the above table, we can say that a customer orders on average once, makes o
 
 - **Are there any significant deviations, and if so, what are the reasons behind them?**
 
- Out of 13 products 7 showed a negative variance. 
+ Out of 13 products 7 showed a negative variance. There total revenue for 13 products differed 81.61% from the total budget allocated for them.
 
 - **Which products or territories contributed the most to any variance?**
 
@@ -486,6 +486,9 @@ For example, majority of the customers are Promising New Customers who make purc
 
 On the other hand, there are 142 customers who are at the risk of churning. So the company can should try to find the reasons behind their churning and take positive actions to reduce the number of churned customers.
 
+
+from RFM analysis we found 4 segments of customers among them 68% are promising new customers while 28% customers are of risk of churning.  
+
 * **Top 10 RFM customer** -
 
 ![top 10 rfm customer](https://github.com/Arpita-deb/Unified-Mentor-Project-2-Sales-budget-analysis/assets/139372731/97ebefdf-9096-4a5d-9f56-32e5e04cce10)
@@ -555,13 +558,15 @@ The United States and Australia are already producing high revenue. However, Can
 
 ## Summary:
 
-* **2016** shows significantly higher sales revenue, higher number of orders placed, quantity ordered as well as number of customers compared to 2014 and 2015. **June** consistently experiences a significant spike in sales, possibly due to summer season promotions or events. After June, sales decline in July and remain relatively flat until year-end. **November and December** show increased revenue, likely due to holiday shopping and year-end sales.
+* **2016** shows significantly higher sales revenue, higher number of orders placed, quantity ordered as well as number of customers compared to 2014 and 2015. Sales rate decreased 23% from 2014 to 2015 but increased 65% from 2015 to 2016.
 
-* From Sales Budget Analysis, we found out that 7 out of 13 products have lower actual sales revenue in 2016 than was projected. A further exploration revealed lack of sales in various months and difference of pricings in various countries may have been potential reasons for their large variance.
+* **June** consistently experiences a significant spike in sales, possibly due to summer season promotions or events. After June, sales decline in July and remain relatively flat until year-end. **November and December** show increased revenue, likely due to holiday shopping and year-end sales. 
+
+* From Sales Budget Analysis, we found out that 7 out of 13 products have lower actual sales revenue in 2016 than was projected. The total yearly revenue for 13 products differed 81.61% from the total budget allocated for them. A further exploration revealed lack of sales in various months and difference of pricings in various countries may have been potential reasons for their large variance.
    
 * From analyzing various Customer demographics and product preference, we found out that -
 
-  1. **Age Distribution**: The age group between 40 and 49 years consistently generated the highest revenue across all years. Following closely were customers aged 50-59 and 60-69. Thus, the majority of customers fall within the 40 to 60 age range, with a gradual decline in customer numbers after 60.
+  1. **Age Distribution**: The age group between 40 and 49 years consistently generated the highest revenue across all years. They constitute about 35% of the total customer base. Following closely were customers aged 50-59 and 60-69. Thus, the majority of customers fall within the 40 to 60 age range, with a gradual decline in customer numbers after 60.
 
   2. **Gender Distribution**: Gender did not significantly impact revenue generation. Female customers contributed slightly more revenue than male customers.
 
@@ -617,9 +622,11 @@ The United States and Australia are already producing high revenue. However, Can
        - Based on customer lifetime duration (how long they've been doing business with the company), we segmented them into three categories: low, medium, and high.
        - The largest customer base falls into the medium category, with revenue 27.9% higher than low-value customers and 94% higher than high-value customers.
 
-* From RFM Analysis, we found that majority of the customers are promising new customers who have somewhat recently purchased, with low frequency and monetary value. These customers have potential for repeating purchase, increase in frequency and spending amount with more engagement with the company. Some other segments include recent customers, at risk of churning and customers who need attention before they churn.
+* From RFM Analysis, we found that 68% of the customers are promising new customers who have somewhat recently purchased, with low frequency and monetary value. These customers have potential for repeating purchase, increase in frequency and spending amount with more engagement with the company. On the other hand 28% of total customers are at the risk of churning.
 
-* From analyzing 406 products, we found that Components category has the highest number of products compared to bikes, accessories, clothing etc. Road frames, Road bikes and Mountain frames are the top product subcategory. Most of the products are in Black color and least in Grey and white.
+* From analyzing 406 products, we found that Components category has the highest number of products (46%) compared to bikes (30%), accessories (8%) , clothing(11%). However, in terms of total revenue, Bikes monopolizes other categories by contributing 96.62% or 61 million Dollars. The rest 4% are distributed among Accessories (2.28%) and Clothing (1.1%).
+  
+* Road frames, Road bikes and Mountain frames are the top product subcategory. Most of the products are in Black color and least in Grey and white.
 
 ## Power BI Dashboard:
 
